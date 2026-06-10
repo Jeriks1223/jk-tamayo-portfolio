@@ -2,12 +2,15 @@
 
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import ThemeToggle from "./ThemeToggle";
 
 const navLinks = [
+  { href: "#hero", label: "Home" },
   { href: "#about", label: "About" },
   { href: "#skills", label: "Skills" },
   { href: "#experience", label: "Experience" },
   { href: "#projects", label: "Projects" },
+  { href: "#interests", label: "Interests" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -28,6 +31,8 @@ export default function Navbar() {
 
   return (
     <motion.nav
+      role="navigation"
+      aria-label="Primary navigation"
       initial={{ y: -60, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
@@ -40,25 +45,30 @@ export default function Navbar() {
       </div>
 
       {/* Desktop links */}
-      <ul className="hidden md:flex gap-8 list-none">
-        {navLinks.map((link) => (
-          <li key={link.href}>
-            <button
-              onClick={() => scrollTo(link.href)}
-              className="text-[var(--muted)] text-sm hover:text-[var(--text)] transition-colors cursor-pointer bg-transparent border-none font-sans"
-            >
-              {link.label}
-            </button>
-          </li>
-        ))}
-      </ul>
+      <div className="hidden md:flex items-center gap-4">
+        <ul className="flex gap-8 list-none">
+          {navLinks.map((link) => (
+            <li key={link.href}>
+              <button
+                onClick={() => scrollTo(link.href)}
+                className="text-[var(--muted)] text-sm hover:text-[var(--text)] hover:underline decoration-[var(--accent2)] underline-offset-4 hover:bg-[var(--surface)]/10 rounded-sm px-1 py-0.5 transition-all duration-200 cursor-pointer bg-transparent border-none font-sans"
+              >
+                {link.label}
+              </button>
+            </li>
+          ))}
+        </ul>
 
-      <button
-        onClick={() => scrollTo("#contact")}
-        className="hidden md:block bg-[var(--accent)] text-white border-none px-5 py-2 rounded-lg text-sm font-medium cursor-pointer hover:opacity-85 transition-opacity font-sans"
-      >
-        Hire Me
-      </button>
+        <div className="flex items-center gap-3">
+          <button
+            onClick={() => scrollTo("#contact")}
+            className="bg-[var(--accent)] text-white border-none px-5 py-2 rounded-lg text-sm font-medium cursor-pointer hover:opacity-85 transition-opacity font-sans"
+          >
+            Hire Me
+          </button>
+          <ThemeToggle />
+        </div>
+      </div>
 
       {/* Mobile menu button */}
       <button
@@ -76,11 +86,14 @@ export default function Navbar() {
           animate={{ opacity: 1, y: 0 }}
           className="absolute top-full left-0 right-0 bg-[var(--bg3)] border-b border-[var(--border)] py-4 flex flex-col gap-2 md:hidden"
         >
+          <div className="px-6 pb-2 border-b border-[var(--border)]">
+            <ThemeToggle />
+          </div>
           {navLinks.map((link) => (
             <button
               key={link.href}
               onClick={() => scrollTo(link.href)}
-              className="text-[var(--muted)] text-sm px-6 py-2 text-left hover:text-[var(--text)] transition-colors bg-transparent border-none cursor-pointer font-sans"
+              className="text-[var(--muted)] text-sm px-6 py-2 text-left hover:text-[var(--text)] hover:underline decoration-[var(--accent2)] underline-offset-4 hover:bg-[var(--surface)]/10 rounded-sm transition-all duration-200 bg-transparent border-none cursor-pointer font-sans"
             >
               {link.label}
             </button>

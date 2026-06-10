@@ -13,6 +13,8 @@
   --surface2: #1f1f35;
   --border: rgba(255, 255, 255, 0.07);
   --border2: rgba(255, 255, 255, 0.12);
+  --glass: rgba(26, 26, 46, 0.78);
+  --glass-border: rgba(255, 255, 255, 0.12);
   --text: #e8e8f0;
   --muted: #8888aa;
   --accent: #7c6af4;
@@ -21,6 +23,26 @@
   --green: #34d399;
   --amber: #fbbf24;
   --pink: #f472b6;
+}
+
+.light {
+  --bg: #f8fafc;
+  --bg2: #ffffff;
+  --bg3: #f1f5f9;
+  --surface: #ffffff;
+  --surface2: #f8fafc;
+  --border: rgba(203, 213, 225, 0.8);
+  --border2: rgba(203, 213, 225, 0.95);
+  --glass: rgba(255, 255, 255, 0.72);
+  --glass-border: rgba(15, 23, 42, 0.12);
+  --text: #0f172a;
+  --muted: #64748b;
+  --accent: #4f46e5;
+  --accent2: #0ea5e9;
+  --cyan: #06b6d4;
+  --green: #10b981;
+  --amber: #f59e0b;
+  --pink: #db2777;
 }
 
 * {
@@ -75,7 +97,8 @@ body {
   }
 
   .glass {
-    background: rgba(26, 26, 46, 0.8);
+    background: var(--glass);
+    border-color: var(--glass-border);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
   }
@@ -83,5 +106,51 @@ body {
   .border-glow {
     border: 1px solid rgba(124, 106, 244, 0.4);
     box-shadow: 0 0 20px rgba(124, 106, 244, 0.1);
+  }
+}
+
+/* Readability & Accessibility Enhancements */
+html {
+  font-size: 16px; /* sensible base for rems */
+}
+
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+.skip-link {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: var(--surface);
+  color: var(--text);
+  padding: 8px 12px;
+  border-radius: 6px;
+  transform: translateY(-120%);
+  transition: transform 150ms ease;
+  z-index: 9999;
+}
+.skip-link:focus {
+  transform: translateY(0%);
+}
+
+:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
   }
 }
