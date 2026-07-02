@@ -66,7 +66,7 @@ export default function Contact() {
             {[
               { icon: "📧", label: "Email", value: PERSONAL.email },
               { icon: "📍", label: "Location", value: `${PERSONAL.location} 🇵🇭` },
-              { icon: "💼", label: "Current Role", value: "NetSuite Developer @ GAI" },
+              { icon: "💼", label: "Current Role", value: "NetSuite & Full Stack Developer @ GAI" },
             ].map((item) => (
               <div
                 key={item.label}
