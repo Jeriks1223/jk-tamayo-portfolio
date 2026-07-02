@@ -5,7 +5,7 @@ export default function Footer() {
       style={{ borderTop: "1px solid var(--border)" }}
     >
       <p className="font-mono text-xs" style={{ color: "var(--muted)" }}>
-        © {new Date().getFullYear()} Jericho Kyle M. Tamayo · Built with Next.js &amp; Framer Motion · Cebu, Philippines 🇵🇭
+        © {new Date().getFullYear()}  Jericho Kyle M. Tamayo · Built with Next.js &amp; Framer Motion · Cebu, Philippines 🇵🇭
       </p>
     </footer>
   );
