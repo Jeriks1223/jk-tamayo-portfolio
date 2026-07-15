@@ -173,6 +173,72 @@ export const PROJECTS = [
     features: ["POS Application", "POS Printing", "PDE Server", "SQL Server Backend"],
     category: "Desktop App",
   },
+  {
+    title: "Intelligent Task Orchestrator",
+    description:
+      "A polished Kanban-style task and project management tool with AI-powered sub-task generation, helping teams break down big goals into actionable steps automatically.",
+    icon: "🗂️",
+    color: "rgba(124,106,244,0.15)",
+    tech: ["Next.js", "AI Integration", "Kanban"],
+    features: ["Kanban Board", "AI Sub-task Generation", "Project Management"],
+    category: "Web App",
+    link: "https://magic-task-mind.lovable.app",
+  },
+  {
+    title: "JKCM — Jesus' Kingdom Culture Ministries",
+    description:
+      "Official website for Jesus' Kingdom Culture Ministries, featuring ministry pages, sermons, events, and a prayer request system for the church community.",
+    icon: "⛪",
+    color: "rgba(34,211,238,0.15)",
+    tech: ["Next.js", "Vercel"],
+    features: ["Sermons Page", "Events Listing", "Ministry Pages", "Prayer Requests"],
+    category: "Website",
+    link: "https://jkcm.vercel.app/",
+  },
+  {
+    title: "FatherHood Philippines Inc.",
+    description:
+      "Organization website for FatherHood Philippines Inc., supporting membership applications, event listings, and a member login portal for a fathers' fellowship network.",
+    icon: "👨‍👧‍👦",
+    color: "rgba(52,211,153,0.15)",
+    tech: ["Next.js", "Vercel"],
+    features: ["Membership Application", "Member Login", "Events Page"],
+    category: "Website",
+    link: "https://fatherhood-philippines-inc.vercel.app/",
+  },
+  {
+    title: "iTeacherPH — School Management System",
+    description:
+      "All-in-one school management platform for Philippine schools, providing tools for teachers and administrators to manage day-to-day academic operations.",
+    icon: "🏫",
+    color: "rgba(251,191,36,0.15)",
+    tech: ["Next.js", "Authentication"],
+    features: ["School Management", "Teacher Tools", "Secure Login"],
+    category: "Web App",
+    link: "https://i-teacher-ph.vercel.app/",
+  },
+  {
+    title: "Teacher Scheduler",
+    description:
+      "School teacher schedule management system for building, uploading, and bulk-printing class schedules by teacher and grade level, from Kindergarten through Grade 12.",
+    icon: "🗓️",
+    color: "rgba(244,114,182,0.15)",
+    tech: ["Next.js", "Scheduling"],
+    features: ["Schedule Builder", "Bulk Print", "Upload/Export"],
+    category: "Web App",
+    link: "https://teacher-scheduler-cyan.vercel.app/scheduler",
+  },
+  {
+    title: "JKT Expense Tracker",
+    description:
+      "Personal finance web app for tracking expenses with a secure login and dashboard, helping users monitor spending and stay on top of their budget.",
+    icon: "💰",
+    color: "rgba(167,139,250,0.15)",
+    tech: ["Next.js", "Authentication", "Dashboard"],
+    features: ["Expense Tracking", "Dashboard", "Secure Login"],
+    category: "Web App",
+    link: "https://jkt-expense-tracker.vercel.app/",
+  },
 ];
 
 export const EDUCATION = [
@@ -201,4 +267,4 @@ export const INTERESTS = [
   { emoji: "📈", label: "Business Automation" },
 ];
 
-export const PROJECT_CATEGORIES = ["All", "ERP", "Web App", "Power Platform", "Desktop App"];
+export const PROJECT_CATEGORIES = ["All", "ERP", "Web App", "Power Platform", "Desktop App", "Website"];
