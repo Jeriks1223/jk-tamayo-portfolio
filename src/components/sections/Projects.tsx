@@ -12,7 +12,7 @@ export default function Projects() {
   const filtered =
     activeCategory === "All"
       ? PROJECTS
-      : PROJECTS.filter((p) => p.category === activeCategory);
+      : PROJECTS.filter((p) => p.category.includes(activeCategory));
 
   return (
     <section id="projects" style={{ padding: "6rem 1.5rem", background: "var(--bg2)" }}>
@@ -83,16 +83,21 @@ export default function Projects() {
                   >
                     {project.icon}
                   </div>
-                  <span
-                    className="text-xs px-2 py-1 rounded-md font-mono"
-                    style={{
-                      color: "var(--muted)",
-                      background: "var(--bg3)",
-                      border: "1px solid var(--border)",
-                    }}
-                  >
-                    {project.category}
-                  </span>
+                  <div className="flex flex-wrap gap-1 justify-end">
+                    {project.category.map((cat) => (
+                      <span
+                        key={cat}
+                        className="text-xs px-2 py-1 rounded-md font-mono"
+                        style={{
+                          color: "var(--muted)",
+                          background: "var(--bg3)",
+                          border: "1px solid var(--border)",
+                        }}
+                      >
+                        {cat}
+                      </span>
+                    ))}
+                  </div>
                 </div>
 
                 <div className="font-bold text-base mb-2 flex items-center gap-1.5">
