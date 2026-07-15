@@ -121,7 +121,7 @@ export const PROJECTS = [
     color: "rgba(124,106,244,0.15)",
     tech: ["NetSuite", "SuiteScript", "SuiteFlow"],
     features: ["Saved Searches", "Analytics Dashboards", "Workflow Automation", "SuiteScripts", "Suitelets", "Custom Forms", "PDF Templates"],
-    category: "ERP",
+    category: ["ERP"],
   },
   {
     title: "Dealer Parts Inquiry System",
@@ -131,7 +131,7 @@ export const PROJECTS = [
     color: "rgba(34,211,238,0.15)",
     tech: ["Next.js", "MySQL", "AWS"],
     features: ["Dealer Pricing", "SRP Pricing", "Inventory Visibility", "Reporting", "Activity Tracking"],
-    category: "Web App",
+    category: ["Web App"],
   },
   {
     title: "Retail Sales & Inventory Tracking System",
@@ -141,7 +141,7 @@ export const PROJECTS = [
     color: "rgba(52,211,153,0.15)",
     tech: ["Next.js", "PostgreSQL", "NetSuite"],
     features: ["Sales Tracking", "Unit Monitoring", "Dashboard Analytics", "Excel Exports", "File Upload"],
-    category: "Web App",
+    category: ["Web App"],
   },
   {
     title: "Cash Advance Management System",
@@ -151,7 +151,7 @@ export const PROJECTS = [
     color: "rgba(251,191,36,0.15)",
     tech: ["Power Apps", "SharePoint", "Power Automate"],
     features: ["Approval Workflow", "Power Automate", "Power Apps", "SharePoint Integration"],
-    category: "Power Platform",
+    category: ["Power Platform"],
   },
   {
     title: "Fuel Request & Approval System",
@@ -161,7 +161,7 @@ export const PROJECTS = [
     color: "rgba(244,114,182,0.15)",
     tech: ["Power Apps", "Power Automate", "SharePoint"],
     features: ["Approval Routing", "Workflow Automation", "Mobile Friendly Forms"],
-    category: "Power Platform",
+    category: ["Power Platform"],
   },
   {
     title: "Enterprise POS Ecosystem",
@@ -171,7 +171,7 @@ export const PROJECTS = [
     color: "rgba(167,139,250,0.15)",
     tech: ["C#", "WinForms", "MSSQL"],
     features: ["POS Application", "POS Printing", "PDE Server", "SQL Server Backend"],
-    category: "Desktop App",
+    category: ["Desktop App"],
   },
   {
     title: "Intelligent Task Orchestrator",
@@ -181,7 +181,7 @@ export const PROJECTS = [
     color: "rgba(124,106,244,0.15)",
     tech: ["Next.js", "AI Integration", "Kanban"],
     features: ["Kanban Board", "AI Sub-task Generation", "Project Management"],
-    category: "Web App",
+    category: ["Web App"],
     link: "https://magic-task-mind.lovable.app",
   },
   {
@@ -192,7 +192,7 @@ export const PROJECTS = [
     color: "rgba(34,211,238,0.15)",
     tech: ["Next.js", "Vercel"],
     features: ["Sermons Page", "Events Listing", "Ministry Pages", "Prayer Requests"],
-    category: "Website",
+    category: ["Website"],
     link: "https://jkcm.vercel.app/",
   },
   {
@@ -203,7 +203,7 @@ export const PROJECTS = [
     color: "rgba(52,211,153,0.15)",
     tech: ["Next.js", "Vercel"],
     features: ["Membership Application", "Member Login", "Events Page"],
-    category: "Website",
+    category: ["Website"],
     link: "https://fatherhood-philippines-inc.vercel.app/",
   },
   {
@@ -214,7 +214,7 @@ export const PROJECTS = [
     color: "rgba(251,191,36,0.15)",
     tech: ["Next.js", "Authentication"],
     features: ["School Management", "Teacher Tools", "Secure Login"],
-    category: "Web App",
+    category: ["Web App"],
     link: "https://i-teacher-ph.vercel.app/",
   },
   {
@@ -225,7 +225,7 @@ export const PROJECTS = [
     color: "rgba(244,114,182,0.15)",
     tech: ["Next.js", "Scheduling"],
     features: ["Schedule Builder", "Bulk Print", "Upload/Export"],
-    category: "Web App",
+    category: ["Web App"],
     link: "https://teacher-scheduler-cyan.vercel.app/scheduler",
   },
   {
@@ -236,7 +236,7 @@ export const PROJECTS = [
     color: "rgba(167,139,250,0.15)",
     tech: ["Next.js", "Authentication", "Dashboard"],
     features: ["Expense Tracking", "Dashboard", "Secure Login"],
-    category: "Web App",
+    category: ["Web App", "Mobile App"],
     link: "https://jkt-expense-tracker.vercel.app/",
   },
   {
@@ -247,7 +247,7 @@ export const PROJECTS = [
     color: "rgba(34,211,238,0.15)",
     tech: ["Next.js", "PostgreSQL", "Flutter", "SQLite"],
     features: ["Dues & Billing", "Announcements", "Visitor Logs", "Mobile App", "Offline Sync"],
-    category: "Mobile App",
+    category: ["Mobile App", "Web App"],
   },
   {
     title: "Pet Clinic Scheduling System",
@@ -257,7 +257,7 @@ export const PROJECTS = [
     color: "rgba(52,211,153,0.15)",
     tech: ["Next.js", "PostgreSQL"],
     features: ["Appointment Booking", "Vet Availability", "Patient Records", "Schedule Management"],
-    category: "Web App",
+    category: ["Web App"],
   },
   {
     title: "Airbnb Management System",
@@ -267,7 +267,7 @@ export const PROJECTS = [
     color: "rgba(251,191,36,0.15)",
     tech: ["Next.js", "PostgreSQL"],
     features: ["Listings Management", "Reservation Tracking", "Guest Communication", "Occupancy Dashboard"],
-    category: "Web App",
+    category: ["Web App"],
   },
   {
     title: "Booking System",
@@ -277,7 +277,7 @@ export const PROJECTS = [
     color: "rgba(167,139,250,0.15)",
     tech: ["Next.js", "PostgreSQL"],
     features: ["Real-time Availability", "Reservations", "Confirmation Management"],
-    category: "Web App",
+    category: ["Web App"],
   },
 ];
 
