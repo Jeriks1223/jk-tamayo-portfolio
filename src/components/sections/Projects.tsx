@@ -72,6 +72,9 @@ export default function Projects() {
                   (e.currentTarget as HTMLElement).style.borderColor = "var(--border)";
                   (e.currentTarget as HTMLElement).style.transform = "translateY(0)";
                 }}
+                onClick={() => {
+                  if (project.link) window.open(project.link, "_blank", "noopener,noreferrer");
+                }}
               >
                 <div className="flex justify-between items-start mb-4">
                   <div
@@ -92,7 +95,17 @@ export default function Projects() {
                   </span>
                 </div>
 
-                <div className="font-bold text-base mb-2">{project.title}</div>
+                <div className="font-bold text-base mb-2 flex items-center gap-1.5">
+                  {project.title}
+                  {project.link && (
+                    <span
+                      className="text-xs opacity-0 group-hover:opacity-100 transition-opacity"
+                      style={{ color: "var(--accent)" }}
+                    >
+                      ↗
+                    </span>
+                  )}
+                </div>
                 <p className="text-sm leading-relaxed flex-1 mb-4" style={{ color: "var(--muted)" }}>
                   {project.description}
                 </p>
