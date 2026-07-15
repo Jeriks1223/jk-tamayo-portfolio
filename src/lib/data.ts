@@ -239,6 +239,46 @@ export const PROJECTS = [
     category: "Web App",
     link: "https://jkt-expense-tracker.vercel.app/",
   },
+  {
+    title: "HOA Management System",
+    description:
+      "Homeowners association management platform with a Next.js web portal for admins and a Flutter mobile app for residents — handling dues, announcements, visitor logs, and offline-capable local sync.",
+    icon: "🏘️",
+    color: "rgba(34,211,238,0.15)",
+    tech: ["Next.js", "PostgreSQL", "Flutter", "SQLite"],
+    features: ["Dues & Billing", "Announcements", "Visitor Logs", "Mobile App", "Offline Sync"],
+    category: "Mobile App",
+  },
+  {
+    title: "Pet Clinic Scheduling System",
+    description:
+      "Appointment scheduling platform for veterinary clinics, letting pet owners book consultations while staff manage vet availability, patient records, and daily schedules.",
+    icon: "🐾",
+    color: "rgba(52,211,153,0.15)",
+    tech: ["Next.js", "PostgreSQL"],
+    features: ["Appointment Booking", "Vet Availability", "Patient Records", "Schedule Management"],
+    category: "Web App",
+  },
+  {
+    title: "Airbnb Management System",
+    description:
+      "Property management platform for short-term rental hosts — centralizing listings, reservations, guest communication, and occupancy tracking across multiple units.",
+    icon: "🏠",
+    color: "rgba(251,191,36,0.15)",
+    tech: ["Next.js", "PostgreSQL"],
+    features: ["Listings Management", "Reservation Tracking", "Guest Communication", "Occupancy Dashboard"],
+    category: "Web App",
+  },
+  {
+    title: "Booking System",
+    description:
+      "General-purpose reservation and booking platform for services and facilities, with real-time availability, scheduling, and confirmation management.",
+    icon: "🎟️",
+    color: "rgba(167,139,250,0.15)",
+    tech: ["Next.js", "PostgreSQL"],
+    features: ["Real-time Availability", "Reservations", "Confirmation Management"],
+    category: "Web App",
+  },
 ];
 
 export const EDUCATION = [
@@ -267,4 +307,4 @@ export const INTERESTS = [
   { emoji: "📈", label: "Business Automation" },
 ];
 
-export const PROJECT_CATEGORIES = ["All", "ERP", "Web App", "Power Platform", "Desktop App", "Website"];
+export const PROJECT_CATEGORIES = ["All", "ERP", "Web App", "Power Platform", "Desktop App", "Website", "Mobile App"];
