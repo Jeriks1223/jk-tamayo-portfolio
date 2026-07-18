@@ -296,7 +296,7 @@ export const PROJECTS = [
     icon: "🏛️",
     color: "rgba(167,139,250,0.15)",
     tech: ["Next.js", "PostgreSQL"],
-features: ["YouthProfiling", "EventManagement", "QRAttendance", "Announcements", "DocumentRequests", "BudgetManagement", "ProjectManagement", "ResolutionManagement", "VolunteerManagement", "Dashboard", "Reports", "AuditLogs"]
+features: ["YouthProfiling", "EventManagement", "QRAttendance", "Announcements", "DocumentRequests", "BudgetManagement", "ProjectManagement", "ResolutionManagement", "VolunteerManagement", "Dashboard", "Reports", "AuditLogs"],
     category: ["Web App"],
   },
         {
@@ -306,7 +306,7 @@ features: ["YouthProfiling", "EventManagement", "QRAttendance", "Announcements",
     icon: "👥",
     color: "rgba(167,139,250,0.15)",
     tech: ["Next.js", "PostgreSQL"],
-features: ["Residents", "Households", "CertificateRequests", "BlotterManagement", "IncidentReporting", "SMSAnnouncements", "DisasterEvacuation", "Dashboard", "Reports", "AuditLogs"]
+features: ["Residents", "Households", "CertificateRequests", "BlotterManagement", "IncidentReporting", "SMSAnnouncements", "DisasterEvacuation", "Dashboard", "Reports", "AuditLogs"],
   category: ["Web App"],
   },
        {
@@ -316,7 +316,7 @@ features: ["Residents", "Households", "CertificateRequests", "BlotterManagement"
     icon: "🚘",
     color: "rgba(167,139,250,0.15)",
     tech: ["Next.js", "PostgreSQL"],
-features: ["OnlineBooking", "Locations", "Vehicles", "Services", "Bookings", "StaffManagement", "Attendance", "Scheduling", "Inventory", "Reports", "Dashboard"]
+features: ["OnlineBooking", "Locations", "Vehicles", "Services", "Bookings", "StaffManagement", "Attendance", "Scheduling", "Inventory", "Reports", "Dashboard"],
   category: ["Web App"],
   },
         {
@@ -326,7 +326,7 @@ features: ["OnlineBooking", "Locations", "Vehicles", "Services", "Bookings", "St
     icon: "📱",
     color: "rgba(167,139,250,0.15)",
     tech: ["Next.js", "PostgreSQL"],
-features: ["Authentication", "QRCodeGeneration", "QRCodeHistory", "UserDashboard", "URLManagement", "PrivateStorage"]
+features: ["Authentication", "QRCodeGeneration", "QRCodeHistory", "UserDashboard", "URLManagement", "PrivateStorage"],
   category: ["Web App"],
   },
          {
@@ -336,7 +336,7 @@ features: ["Authentication", "QRCodeGeneration", "QRCodeHistory", "UserDashboard
     icon: "🎲",
     color: "rgba(167,139,250,0.15)",
     tech: ["Next.js", "PostgreSQL"],
-features: ["DiceRoll", "RandomSongs", "YouTubePlayer", "RollHistory", "SongManagement", "PlayerNames"]
+features: ["DiceRoll", "RandomSongs", "YouTubePlayer", "RollHistory", "SongManagement", "PlayerNames"],
   category: ["Web App"],
   },
 ];
