@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://jericho.dev",
+    url: "https://jk-tamayo-portfolio.vercel.app/",
     title: "Jericho Kyle M. Tamayo — NetSuite & Full Stack Developer",
     description:
       "Building enterprise systems, automations, and scalable business solutions. NetSuite Developer · Full Stack Developer · AI Ready.",
