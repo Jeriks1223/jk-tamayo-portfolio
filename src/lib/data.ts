@@ -4,7 +4,7 @@ export const PERSONAL = {
   headline: "Building Enterprise Systems, Automations, and Scalable Business Solutions",
   roles: ["NetSuite Developer", "Full Stack Developer", "AI Ready"],
   description:
-    "Passionate software engineer specializing in ERP customization, workflow automation, cloud infrastructure, enterprise application development, and business process optimization. Experienced in building solutions across NetSuite, Microsoft Power Platform, AWS, .NET, Next.js, SQL Server, and modern web technologies.",
+    "Passionate software engineer specializing in ERP customization, workflow automation, cloud infrastructure, enterprise application development, and business process optimization. Experienced in building solutions across NetSuite, Microsoft Power Platform, AZURE, AWS, .NET,Next.js, PostgreSQL, Flutter,  SQLite, MySQL, SQL Server, and modern web technologies.",
   email: "jerectamz@gmail.com",
   location: "Cebu, Philippines",
   github: "https://github.com/",
