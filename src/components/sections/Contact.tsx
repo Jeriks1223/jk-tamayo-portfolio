@@ -126,7 +126,7 @@ export default function Contact() {
                 GitHub ↗
               </a>
               <a
-                href="/assets/resume/Resume - Jericho Kyle M. Tamayo.pdf"
+                href="/assets/resume/Resume - Jericho Kyle M. Tamayo - Updated.pdf"
                 download
                 className="px-4 py-2 rounded-lg text-sm no-underline text-white transition-all hover:opacity-85"
                 style={{ background: "var(--accent)" }}
