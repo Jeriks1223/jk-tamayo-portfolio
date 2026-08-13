@@ -1,13 +1,11 @@
 "use client";
 
-import type { ReactElement } from "react";
-
 // Inline SVG icons for each technology
 // Colors are the official brand colors
 
 type IconProps = { size?: number; className?: string };
 
-const icons: Record<string, (p: IconProps) => ReactElement> = {
+const icons: Record<string, (p: IconProps) => JSX.Element> = {
   NetSuite: ({ size = 20 }) => (
     <svg width={size} height={size} viewBox="0 0 24 24" fill="none">
       <rect width="24" height="24" rx="4" fill="#1F6FEB" />
