@@ -198,7 +198,7 @@ export const SanctumIcon = ({ size = 24 }: P) => (
 );
 
 // Map: tech label → component
-export const CUSTOM_ICONS: Record<string, (p: P) => JSX.Element> = {
+export const CUSTOM_ICONS: Record<string, (p: P) => React.ReactElement> = {
   "NetSuite":       NetSuiteIcon,
   "SuiteScript":    SuiteScriptIcon,
   "SuiteFlow":      SuiteFlowIcon,
