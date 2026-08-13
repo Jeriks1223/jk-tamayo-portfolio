@@ -9,15 +9,19 @@ const applyTheme = (theme: "light" | "dark") => {
 };
 
 export default function ThemeToggle() {
-  const [theme, setTheme] = useState<"light" | "dark">(() => {
-    if (typeof window === "undefined") return "dark";
+  const [theme, setTheme] = useState<"light" | "dark">("dark");
+
+  useEffect(() => {
     const storedTheme = window.localStorage.getItem("theme") as "light" | "dark" | null;
-    return storedTheme
+    const defaultTheme = storedTheme
       ? storedTheme
       : window.matchMedia("(prefers-color-scheme: dark)").matches
       ? "dark"
       : "light";
-  });
+
+    setTheme(defaultTheme);
+    applyTheme(defaultTheme);
+  }, []);
 
   useEffect(() => {
     applyTheme(theme);

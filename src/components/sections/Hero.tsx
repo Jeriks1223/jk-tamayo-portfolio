@@ -125,7 +125,7 @@ export default function Hero() {
             View Projects
           </button>
           <a
-            href="/assets/resume/Resume - Jericho Kyle M. Tamayo - Updated.pdf"
+            href="/assets/resume/Resume - Jericho Kyle M. Tamayo.pdf"
             download
             className="px-7 py-3 rounded-xl font-medium text-sm text-[var(--text)] no-underline cursor-pointer transition-all hover:bg-[var(--surface)]"
             style={{
