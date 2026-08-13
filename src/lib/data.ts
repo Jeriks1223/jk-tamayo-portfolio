@@ -4,7 +4,7 @@ export const PERSONAL = {
   headline: "Building Enterprise Systems, Automations, and Scalable Business Solutions",
   roles: ["NetSuite Developer", "Full Stack Developer", "AI Ready"],
   description:
-    "Passionate software engineer specializing in ERP customization, workflow automation, cloud infrastructure, enterprise application development, and business process optimization. Experienced in building solutions across NetSuite, Microsoft Power Platform, AWS, .NET, Next.js, SQL Server, and modern web technologies.",
+    "Passionate software engineer specializing in ERP customization, workflow automation, cloud infrastructure, enterprise application development, and business process optimization. Experienced in building solutions across NetSuite, Microsoft Power Platform, AZURE, AWS, .NET,Next.js, PostgreSQL, Flutter,  SQLite, MySQL, SQL Server, and modern web technologies.",
   email: "jerectamz@gmail.com",
   location: "Cebu, Philippines",
   github: "https://github.com/",
@@ -21,51 +21,108 @@ export const STATS = [
 
 export const TECH_STACK = [
   "NetSuite", "SuiteScript", "Next.js", "TypeScript", "C#",
-  "ASP.NET", "PostgreSQL", "AWS", "SharePoint", "Power Apps", "Docker", "Linux",
+  "ASP.NET", "PostgreSQL", "AWS", "SharePoint", "Power Apps",
+  "Docker", "Linux", "Flutter", "Laravel", "React Native",
 ];
 
 export const SKILLS = [
   {
-    category: "ERP & Enterprise Systems",
+    category: "ERP",
     icon: "🔷",
-    color: "rgba(124,106,244,0.15)",
-    items: ["NetSuite", "SuiteScript", "SuiteFlow", "SuiteBuilder", "Suitelets", "RESTlets", "Saved Searches", "Analytics", "Advanced PDF Templates"],
+    color: "rgba(31,111,235,0.15)",
+    items: [
+      "NetSuite", "SuiteScript", "SuiteFlow", "SuiteBuilder", "Suitelets",
+      "RESTlets", "Saved Searches", "Analytics", "Advanced PDF Templates",
+      "NetSuite + Next.js API Integration",
+    ],
+  },
+  {
+    category: "CMS",
+    icon: "🌐",
+    color: "rgba(33,117,155,0.15)",
+    items: ["WordPress", "Drupal", "PHP", "MySQL"],
   },
   {
     category: "Full Stack Development",
     icon: "💻",
     color: "rgba(34,211,238,0.15)",
-    items: ["Next.js", "ASP.NET MVC", ".NET Framework", "C#", "JavaScript", "TypeScript", "Node.js"],
+    items: [
+      "Next.js", "React", "ASP.NET MVC", ".NET Framework", "C#",
+      "JavaScript", "TypeScript", "Node.js", "Laravel", "Laravel Sail",
+      "Laravel Sanctum", "PHP",
+    ],
   },
   {
-    category: "Databases",
+    category: "Mobile Development",
+    icon: "📱",
+    color: "rgba(244,114,182,0.15)",
+    items: ["Flutter", "React Native", "SQLite", "Dart"],
+  },
+  {
+    category: "UI & Design Systems",
+    icon: "🎨",
+    color: "rgba(167,139,250,0.15)",
+    items: [
+      "TailwindCSS", "ShadCN UI", "DaisyUI", "Bootstrap",
+      "HTML", "CSS", "Adobe Dreamweaver",
+    ],
+  },
+  {
+    category: "Databases & Data Tools",
     icon: "🗄️",
     color: "rgba(52,211,153,0.15)",
-    items: ["SQL Server", "MSSQL", "MySQL", "PostgreSQL", "Microsoft Lists"],
+    items: [
+      "SQL Server", "MSSQL", "MySQL", "PostgreSQL", "SQLite",
+      "Microsoft Lists", "DBeaver", "Prisma ORM",
+    ],
   },
   {
     category: "Microsoft Ecosystem",
     icon: "🪟",
     color: "rgba(251,191,36,0.15)",
-    items: ["SharePoint", "Power Apps", "Power Automate", "Dynamics 365", "Microsoft 365"],
+    items: [
+      "SharePoint", "Power Apps", "Power Automate", "Microsoft Teams",
+      "Microsoft Lists", "Dynamics 365", "Microsoft 365", "Power BI",
+      "Jazz HR Recruit Plus + Power Automate + Teams API",
+    ],
+  },
+  {
+    category: "Integrations & Ticketing",
+    icon: "🔗",
+    color: "rgba(34,211,238,0.12)",
+    items: [
+      "GLPI Ticketing System", "GLPI + Power BI API",
+      "Desk 365 + Power BI API", "Jazz HR API",
+      "Microsoft Teams API", "NetSuite REST API",
+    ],
   },
   {
     category: "Cloud & Infrastructure",
     icon: "☁️",
     color: "rgba(244,114,182,0.15)",
-    items: ["AWS EC2", "Linux", "Docker", "WSL", "Server Administration", "Azure"],
+    items: [
+      "AWS EC2", "Linux", "Docker", "Laravel Sail",
+      "WSL", "Server Administration", "Azure", "Vercel",
+    ],
   },
   {
-    category: "Dev Tools & Web",
+    category: "Dev Tools & Version Control",
     icon: "🔧",
     color: "rgba(167,139,250,0.15)",
-    items: ["Git", "GitHub", "Bitbucket", "TFS", "DevExpress", "HTML", "CSS", "Bootstrap", "Drupal", "WordPress"],
+    items: [
+      "Git", "GitHub", "GitLab", "Bitbucket", "TFS",
+      "DBeaver", "DevExpress", "Adobe Dreamweaver", "Figma",
+    ],
   },
   {
     category: "Business Analysis",
     icon: "📋",
     color: "rgba(34,211,238,0.12)",
-    items: ["Requirement Gathering", "BRD Documentation", "FSD Documentation", "User Stories", "Process Mapping", "Gap Analysis", "UAT Support", "QA Testing", "User Training"],
+    items: [
+      "Requirement Gathering", "BRD Documentation", "FSD Documentation",
+      "User Stories", "Process Mapping", "Gap Analysis",
+      "UAT Support", "QA Testing", "User Training",
+    ],
   },
 ];
 
@@ -129,7 +186,7 @@ export const PROJECTS = [
       "Role-based inventory inquiry platform allowing dealers and managers to monitor parts availability across multiple locations with dealer/SRP pricing, activity tracking, and dynamic reporting.",
     icon: "📦",
     color: "rgba(34,211,238,0.15)",
-    tech: ["Next.js", "MySQL", "AWS"],
+    tech: ["Next.js", "PostgreSQL", "Azure"],
     features: ["Dealer Pricing", "SRP Pricing", "Inventory Visibility", "Reporting", "Activity Tracking"],
     category: ["Web App"],
   },
@@ -139,7 +196,7 @@ export const PROJECTS = [
       "Enterprise reporting platform integrated with NetSuite. Sales tracking, unit monitoring, dashboard analytics, Excel exports, file upload system, and dynamic reporting for operations management.",
     icon: "📊",
     color: "rgba(52,211,153,0.15)",
-    tech: ["Next.js", "PostgreSQL", "NetSuite"],
+    tech: ["Next.js", "PostgreSQL", "NetSuite","Azure","RESTful API"],
     features: ["Sales Tracking", "Unit Monitoring", "Dashboard Analytics", "Excel Exports", "File Upload"],
     category: ["Web App"],
   },
@@ -160,7 +217,7 @@ export const PROJECTS = [
     icon: "⛽",
     color: "rgba(244,114,182,0.15)",
     tech: ["Power Apps", "Power Automate", "SharePoint"],
-    features: ["Approval Routing", "Workflow Automation", "Mobile Friendly Forms"],
+    features: ["Approval Routing", "Power Automate", "Power Apps", "SharePoint Integration"],
     category: ["Power Platform"],
   },
   {
@@ -169,7 +226,7 @@ export const PROJECTS = [
       "Full-featured point-of-sale ecosystem including POS application, receipt printing, PDE server integration, and SQL Server backend for retail and service operations.",
     icon: "🖥️",
     color: "rgba(167,139,250,0.15)",
-    tech: ["C#", "WinForms", "MSSQL"],
+    tech: ["C#", ".Net","WinForms", "MSSQL"],
     features: ["POS Application", "POS Printing", "PDE Server", "SQL Server Backend"],
     category: ["Desktop App"],
   },
@@ -190,7 +247,7 @@ export const PROJECTS = [
       "Official website for Jesus' Kingdom Culture Ministries, featuring ministry pages, sermons, events, and a prayer request system for the church community.",
     icon: "⛪",
     color: "rgba(34,211,238,0.15)",
-    tech: ["Next.js", "Vercel"],
+    tech: ["Next.js", "PostgreSQL","Vercel"],
     features: ["Sermons Page", "Events Listing", "Ministry Pages", "Prayer Requests"],
     category: ["Website"],
     link: "https://jkcm.vercel.app/",
@@ -201,7 +258,7 @@ export const PROJECTS = [
       "Organization website for FatherHood Philippines Inc., supporting membership applications, event listings, and a member login portal for a fathers' fellowship network.",
     icon: "👨‍👧‍👦",
     color: "rgba(52,211,153,0.15)",
-    tech: ["Next.js", "Vercel"],
+    tech: ["Next.js", "PostgreSQL","Vercel"],
     features: ["Membership Application", "Member Login", "Events Page"],
     category: ["Website"],
     link: "https://fatherhood-philippines-inc.vercel.app/",
@@ -212,7 +269,7 @@ export const PROJECTS = [
       "All-in-one school management platform for Philippine schools, providing tools for teachers and administrators to manage day-to-day academic operations.",
     icon: "🏫",
     color: "rgba(251,191,36,0.15)",
-    tech: ["Next.js", "Authentication"],
+    tech: ["Next.js","PostgreSQL","Prisma ORM", "Authentication"],
     features: ["School Management", "Teacher Tools", "Secure Login"],
     category: ["Web App"],
     link: "https://i-teacher-ph.vercel.app/",
@@ -278,6 +335,66 @@ export const PROJECTS = [
     tech: ["Next.js", "PostgreSQL"],
     features: ["Real-time Availability", "Reservations", "Confirmation Management"],
     category: ["Web App"],
+  },
+    {
+    title: "Pageant-System",
+    description:
+      "Pageant Management System** is a web-based platform that simplifies the management of beauty pageants by providing tools for contestant registration, judge scoring, event scheduling, and result generation. It helps organizers streamline operations, improve accuracy, and ensure a transparent and efficient pageant experience.",
+    icon: "🏆",
+    color: "rgba(167,139,250,0.15)",
+    tech: ["Next.js", "PostgreSQL"],
+    features: ["Event", "EventJudging", "Contestant","Criterion","Scoring"],
+    category: ["Web App"],
+  },
+      {
+    title: "SK Management System",
+    description:
+      "A web-based platform that streamlines Sangguniang Kabataan operations by managing youth profiles, events, budgets, resolutions, announcements, volunteer activities, and document requests. It helps SK officials improve efficiency, transparency, and community engagement through a centralized digital system.",
+    icon: "🏛️",
+    color: "rgba(167,139,250,0.15)",
+    tech: ["Next.js", "PostgreSQL"],
+features: ["YouthProfiling", "EventManagement", "QRAttendance", "Announcements", "DocumentRequests", "BudgetManagement", "ProjectManagement", "ResolutionManagement", "VolunteerManagement", "Dashboard", "Reports", "AuditLogs"],
+    category: ["Web App"],
+  },
+        {
+    title: "Barangay Management System",
+    description:
+      "A web-based platform that digitizes barangay operations by managing resident records, certificate requests, blotter cases, incident reports, announcements, and disaster response. It helps barangay officials deliver faster, more efficient, and transparent public services.",
+    icon: "👥",
+    color: "rgba(167,139,250,0.15)",
+    tech: ["Next.js", "PostgreSQL"],
+features: ["Residents", "Households", "CertificateRequests", "BlotterManagement", "IncidentReporting", "SMSAnnouncements", "DisasterEvacuation", "Dashboard", "Reports", "AuditLogs"],
+  category: ["Web App"],
+  },
+       {
+    title: "ShinyWheels – Carwash Booking & Management System",
+    description:
+      "A web-based platform that simplifies carwash operations by managing online bookings, customers, staff, schedules, inventory, and business reports across multiple branches. It helps improve efficiency, streamline operations, and enhance customer experience.",
+    icon: "🚘",
+    color: "rgba(167,139,250,0.15)",
+    tech: ["Next.js", "PostgreSQL"],
+features: ["OnlineBooking", "Locations", "Vehicles", "Services", "Bookings", "StaffManagement", "Attendance", "Scheduling", "Inventory", "Reports", "Dashboard"],
+  category: ["Web App"],
+  },
+        {
+    title: "QR Code Generator",
+    description:
+      "A web-based platform that allows users to securely generate, store, and manage QR codes for URLs. Each generated QR code is privately linked to the user's account, ensuring secure access and easy management.",
+    icon: "📱",
+    color: "rgba(167,139,250,0.15)",
+    tech: ["Next.js", "PostgreSQL"],
+features: ["Authentication", "QRCodeGeneration", "QRCodeHistory", "UserDashboard", "URLManagement", "PrivateStorage"],
+  category: ["Web App"],
+  },
+         {
+    title: "Roll & Sing",
+    description:
+      "A web-based game that combines dice rolling with random song selection. Players roll a virtual dice and instantly receive a random song to sing, making it a fun and interactive entertainment experience.",
+    icon: "🎲",
+    color: "rgba(167,139,250,0.15)",
+    tech: ["Next.js", "PostgreSQL"],
+features: ["DiceRoll", "RandomSongs", "YouTubePlayer", "RollHistory", "SongManagement", "PlayerNames"],
+  category: ["Web App"],
   },
 ];
 

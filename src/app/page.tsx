@@ -4,6 +4,7 @@ import Hero from "@/components/sections/Hero";
 import Stats from "@/components/sections/Stats";
 import About from "@/components/sections/About";
 import Skills from "@/components/sections/Skills";
+import TechShowcase from "@/components/sections/TechShowcase";
 import Experience from "@/components/sections/Experience";
 import Projects from "@/components/sections/Projects";
 import Education from "@/components/sections/Education";
@@ -17,6 +18,7 @@ export default function Home() {
       <Stats />
       <About />
       <Skills />
+      <TechShowcase />
       <Experience />
       <Projects />
       <Education />

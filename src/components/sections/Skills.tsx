@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { SKILLS } from "@/lib/data";
+import TechIcon, { techColors, hasTechIcon } from "@/components/ui/TechIcon";
 
 export default function Skills() {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.05 });
@@ -56,13 +57,28 @@ export default function Skills() {
                 {cat.items.map((tag) => (
                   <span
                     key={tag}
-                    className="font-mono text-xs px-2.5 py-1 rounded-md"
+                    className="inline-flex items-center gap-1.5 font-mono text-xs px-2.5 py-1.5 rounded-lg transition-all cursor-default"
                     style={{
                       color: "var(--muted)",
-                      background: "var(--bg)",
+                      background: hasTechIcon(tag)
+                        ? techColors[tag] ?? "var(--bg)"
+                        : "var(--bg)",
                       border: "1px solid var(--border)",
                     }}
+                    onMouseEnter={(e) => {
+                      (e.currentTarget as HTMLElement).style.color = "var(--text)";
+                      (e.currentTarget as HTMLElement).style.borderColor = "var(--border2)";
+                    }}
+                    onMouseLeave={(e) => {
+                      (e.currentTarget as HTMLElement).style.color = "var(--muted)";
+                      (e.currentTarget as HTMLElement).style.borderColor = "var(--border)";
+                    }}
                   >
+                    {hasTechIcon(tag) && (
+                      <span className="flex-shrink-0 opacity-80">
+                        <TechIcon name={tag} size={13} />
+                      </span>
+                    )}
                     {tag}
                   </span>
                 ))}
