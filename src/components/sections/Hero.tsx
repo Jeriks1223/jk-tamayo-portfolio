@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { PERSONAL, TECH_STACK } from "@/lib/data";
+import TechIcon, { techColors, hasTechIcon } from "@/components/ui/TechIcon";
 
 const container = {
   hidden: { opacity: 0 },
@@ -124,7 +125,7 @@ export default function Hero() {
             View Projects
           </button>
           <a
-            href="/assets/resume/Resume - Jericho Kyle M. Tamayo.pdf"
+            href="/assets/resume/Resume - Jericho Kyle M. Tamayo - Updated.pdf"
             download
             className="px-7 py-3 rounded-xl font-medium text-sm text-[var(--text)] no-underline cursor-pointer transition-all hover:bg-[var(--surface)]"
             style={{
@@ -150,17 +151,28 @@ export default function Hero() {
           </button>
         </motion.div>
 
-        {/* Tech stack pills */}
+        {/* Tech stack pills with icons */}
         <motion.div variants={item} className="flex justify-center flex-wrap gap-2">
           {TECH_STACK.map((tech) => (
             <span
               key={tech}
-              className="font-mono text-xs px-3 py-1 rounded-md text-[var(--muted)] transition-all hover:text-[var(--text)] hover:border-[var(--border2)] cursor-default"
+              className="inline-flex items-center gap-1.5 font-mono text-xs px-3 py-1.5 rounded-lg text-[var(--muted)] transition-all hover:text-[var(--text)] cursor-default"
               style={{
-                background: "var(--surface)",
+                background: hasTechIcon(tech) ? techColors[tech] ?? "var(--surface)" : "var(--surface)",
                 border: "1px solid var(--border)",
               }}
+              onMouseEnter={(e) => {
+                (e.currentTarget as HTMLElement).style.borderColor = "var(--border2)";
+              }}
+              onMouseLeave={(e) => {
+                (e.currentTarget as HTMLElement).style.borderColor = "var(--border)";
+              }}
             >
+              {hasTechIcon(tech) && (
+                <span className="flex-shrink-0 opacity-90">
+                  <TechIcon name={tech} size={14} />
+                </span>
+              )}
               {tech}
             </span>
           ))}

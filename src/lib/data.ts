@@ -21,51 +21,108 @@ export const STATS = [
 
 export const TECH_STACK = [
   "NetSuite", "SuiteScript", "Next.js", "TypeScript", "C#",
-  "ASP.NET", "PostgreSQL", "AWS", "SharePoint", "Power Apps", "Docker", "Linux",
+  "ASP.NET", "PostgreSQL", "AWS", "SharePoint", "Power Apps",
+  "Docker", "Linux", "Flutter", "Laravel", "React Native",
 ];
 
 export const SKILLS = [
   {
-    category: "ERP & Enterprise Systems",
+    category: "ERP",
     icon: "🔷",
-    color: "rgba(124,106,244,0.15)",
-    items: ["NetSuite", "SuiteScript", "SuiteFlow", "SuiteBuilder", "Suitelets", "RESTlets", "Saved Searches", "Analytics", "Advanced PDF Templates"],
+    color: "rgba(31,111,235,0.15)",
+    items: [
+      "NetSuite", "SuiteScript", "SuiteFlow", "SuiteBuilder", "Suitelets",
+      "RESTlets", "Saved Searches", "Analytics", "Advanced PDF Templates",
+      "NetSuite + Next.js API Integration",
+    ],
+  },
+  {
+    category: "CMS",
+    icon: "🌐",
+    color: "rgba(33,117,155,0.15)",
+    items: ["WordPress", "Drupal", "PHP", "MySQL"],
   },
   {
     category: "Full Stack Development",
     icon: "💻",
     color: "rgba(34,211,238,0.15)",
-    items: ["Next.js", "ASP.NET MVC", ".NET Framework", "C#", "JavaScript", "TypeScript", "Node.js"],
+    items: [
+      "Next.js", "React", "ASP.NET MVC", ".NET Framework", "C#",
+      "JavaScript", "TypeScript", "Node.js", "Laravel", "Laravel Sail",
+      "Laravel Sanctum", "PHP",
+    ],
   },
   {
-    category: "Databases",
+    category: "Mobile Development",
+    icon: "📱",
+    color: "rgba(244,114,182,0.15)",
+    items: ["Flutter", "React Native", "SQLite", "Dart"],
+  },
+  {
+    category: "UI & Design Systems",
+    icon: "🎨",
+    color: "rgba(167,139,250,0.15)",
+    items: [
+      "TailwindCSS", "ShadCN UI", "DaisyUI", "Bootstrap",
+      "HTML", "CSS", "Adobe Dreamweaver",
+    ],
+  },
+  {
+    category: "Databases & Data Tools",
     icon: "🗄️",
     color: "rgba(52,211,153,0.15)",
-    items: ["SQL Server", "MSSQL", "MySQL", "PostgreSQL", "Microsoft Lists"],
+    items: [
+      "SQL Server", "MSSQL", "MySQL", "PostgreSQL", "SQLite",
+      "Microsoft Lists", "DBeaver", "Prisma ORM",
+    ],
   },
   {
     category: "Microsoft Ecosystem",
     icon: "🪟",
     color: "rgba(251,191,36,0.15)",
-    items: ["SharePoint", "Power Apps", "Power Automate", "Dynamics 365", "Microsoft 365"],
+    items: [
+      "SharePoint", "Power Apps", "Power Automate", "Microsoft Teams",
+      "Microsoft Lists", "Dynamics 365", "Microsoft 365", "Power BI",
+      "Jazz HR Recruit Plus + Power Automate + Teams API",
+    ],
+  },
+  {
+    category: "Integrations & Ticketing",
+    icon: "🔗",
+    color: "rgba(34,211,238,0.12)",
+    items: [
+      "GLPI Ticketing System", "GLPI + Power BI API",
+      "Desk 365 + Power BI API", "Jazz HR API",
+      "Microsoft Teams API", "NetSuite REST API",
+    ],
   },
   {
     category: "Cloud & Infrastructure",
     icon: "☁️",
     color: "rgba(244,114,182,0.15)",
-    items: ["AWS EC2", "Linux", "Docker", "WSL", "Server Administration", "Azure"],
+    items: [
+      "AWS EC2", "Linux", "Docker", "Laravel Sail",
+      "WSL", "Server Administration", "Azure", "Vercel",
+    ],
   },
   {
-    category: "Dev Tools & Web",
+    category: "Dev Tools & Version Control",
     icon: "🔧",
     color: "rgba(167,139,250,0.15)",
-    items: ["Git", "GitHub", "Bitbucket", "TFS", "DevExpress", "HTML", "CSS", "Bootstrap", "Drupal", "WordPress"],
+    items: [
+      "Git", "GitHub", "GitLab", "Bitbucket", "TFS",
+      "DBeaver", "DevExpress", "Adobe Dreamweaver", "Figma",
+    ],
   },
   {
     category: "Business Analysis",
     icon: "📋",
     color: "rgba(34,211,238,0.12)",
-    items: ["Requirement Gathering", "BRD Documentation", "FSD Documentation", "User Stories", "Process Mapping", "Gap Analysis", "UAT Support", "QA Testing", "User Training"],
+    items: [
+      "Requirement Gathering", "BRD Documentation", "FSD Documentation",
+      "User Stories", "Process Mapping", "Gap Analysis",
+      "UAT Support", "QA Testing", "User Training",
+    ],
   },
 ];
 
