@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -7,15 +7,7 @@ const inter = Inter({
   display: "swap",
 });
 
-const jetbrains = JetBrains_Mono({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-jetbrains",
-  weight: ["400", "500"],
-});
-
 export const metadata: Metadata = {
-  metadataBase: new URL("https://jk-tamayo-portfolio.vercel.app"),
   title: "Jericho Kyle M. Tamayo — NetSuite & Full Stack Developer",
   description:
     "Passionate software engineer specializing in ERP customization, workflow automation, cloud infrastructure, and enterprise application development. NetSuite Developer, Full Stack Developer, AI Ready.",
@@ -80,7 +72,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.className} ${jetbrains.variable}`}>
+    <html lang="en" className={inter.className}>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap"
+          rel="stylesheet"
+        />
+      </head>
       <body>
         <a href="#main-content" className="skip-link">
           Skip to content

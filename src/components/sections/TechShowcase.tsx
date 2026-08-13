@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { CUSTOM_ICONS, hasCustomIcon } from "@/components/ui/CustomIcons";
 
 const DI = "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons";
 
@@ -147,6 +148,7 @@ const STACK: Category[] = [
 
 function TechCard({ tech, delay, accent }: { tech: Tech; delay: number; accent: string }) {
   const color = tech.color ?? accent;
+  const CustomIcon = hasCustomIcon(tech.label) ? CUSTOM_ICONS[tech.label] : null;
 
   return (
     <motion.div
@@ -175,15 +177,20 @@ function TechCard({ tech, delay, accent }: { tech: Tech; delay: number; accent: 
       }}
     >
       <div
-        className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
+        className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 overflow-hidden"
         style={{ background: tech.bg ?? color + "18", border: `1px solid ${color}22` }}
       >
-        {tech.icon ? (
+        {CustomIcon ? (
+          /* Hand-crafted SVG for brands not on devicons */
+          <CustomIcon size={32} />
+        ) : tech.icon ? (
+          /* devicons CDN icon */
           // eslint-disable-next-line @next/next/no-img-element
           <img src={tech.icon} alt={tech.label} width={24} height={24} style={{ objectFit: "contain" }} loading="lazy" />
         ) : (
+          /* Last-resort text badge */
           <span className="font-mono font-bold" style={{ fontSize: "0.68rem", color, letterSpacing: "0.02em" }}>
-            {tech.fallback}
+            {tech.fallback ?? tech.label.slice(0, 2).toUpperCase()}
           </span>
         )}
       </div>
