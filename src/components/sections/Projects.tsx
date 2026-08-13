@@ -7,7 +7,7 @@ import { PROJECTS, PROJECT_CATEGORIES } from "@/lib/data";
 
 export default function Projects() {
   const [activeCategory, setActiveCategory] = useState("All");
-  const { ref } = useInView({ triggerOnce: true, threshold: 0.05 });
+  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.05 });
 
   const filtered =
     activeCategory === "All"

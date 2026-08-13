@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { PERSONAL } from "@/lib/data";
 
 const highlights = [
   { icon: "🏢", title: "ERP Expert", desc: "Deep NetSuite customization — SuiteScript, SuiteFlow, Suitelets, RESTlets" },
