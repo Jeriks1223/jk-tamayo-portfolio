@@ -1,5 +1,6 @@
 // Custom inline SVG brand icons for tools not available in devicons CDN
 // Hand-crafted to match official brand aesthetics
+import type { ReactElement } from "react";
 
 type P = { size?: number };
 
@@ -198,7 +199,7 @@ export const SanctumIcon = ({ size = 24 }: P) => (
 );
 
 // Map: tech label → component
-export const CUSTOM_ICONS: Record<string, (p: P) => JSX.Element> = {
+export const CUSTOM_ICONS: Record<string, (p: P) => ReactElement> = {
   "NetSuite":       NetSuiteIcon,
   "SuiteScript":    SuiteScriptIcon,
   "SuiteFlow":      SuiteFlowIcon,
