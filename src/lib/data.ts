@@ -396,6 +396,41 @@ features: ["Authentication", "QRCodeGeneration", "QRCodeHistory", "UserDashboard
 features: ["DiceRoll", "RandomSongs", "YouTubePlayer", "RollHistory", "SongManagement", "PlayerNames"],
   category: ["Web App"],
   },
+  {
+  title: "SSH Connection Manager",
+  description:
+    "Windows desktop application for managing SSH server profiles and launching secure SSH sessions through Windows Terminal. It provides centralized server management, connection testing, groups and environment filtering, connection history, and validated SSH command generation for faster and safer server access.",
+  icon: "🖥️",
+  color: "rgba(59,130,246,0.15)",
+  tech: [
+    ".NET 8",
+    "C#",
+    "WinForms",
+    "SQLite",
+    "Dapper",
+    "SSH.NET",
+    "Windows Terminal",
+    "Serilog"
+  ],
+  features: [
+    "SSH Server Profile Management",
+    "One-Click / Double-Click SSH Connection",
+    "Windows Terminal Integration",
+    "Connection Testing",
+    "Server Groups & Environment Filters",
+    "Connection History",
+    "Server Search & Filtering",
+    "SSH Key Authentication Support",
+    "Input Validation",
+    "SQLite Local Database",
+    "Dependency Injection",
+    "Clean Architecture",
+    "DPAPI Credential Storage",
+    "Structured SSH Command Generation"
+  ],
+  category: ["Desktop Application"],
+  link: "#"
+},
 ];
 
 export const EDUCATION = [
