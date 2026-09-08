@@ -542,22 +542,46 @@ export const INTERESTS = [
 
 export const TESTIMONIALS = [
   {
-    name: "Jose Rizal",
-    role: "CEO, Philippine Innovation Hub",
-    content: "Jericho's work on our NetSuite customization transformed our entire ERP workflow. His attention to detail and technical expertise in SuiteScript development is exceptional.",
+    name: "Lyndon Go",
+    role: "CEO, Global AutoDistribution Inc.",
+    content: "Jericho's NetSuite development work has been instrumental in streamlining our operations across subsidiaries. His custom solutions have significantly improved our ERP efficiency and data visibility.",
     avatar: "👨‍💼"
   },
   {
-    name: "Maria Clara",
-    role: "Operations Manager, Global AutoDistribution",
-    content: "The Dealer Parts Inquiry System Jericho built significantly improved our inventory visibility across multiple locations. His ability to understand business needs and translate them into technical solutions is remarkable.",
+    name: "FE Sotomayor",
+    role: "IT Manager, Global AutoDistribution Inc.",
+    content: "Jericho's technical expertise in NetSuite SuiteScript and his ability to integrate our systems with modern web technologies has been exceptional. He's a valuable asset to our IT team.",
+    avatar: "👨‍�"
+  },
+  {
+    name: "Ralph Dihayco",
+    role: "Parts Manager, Global AutoDistribution Inc.",
+    content: "The Dealer Parts Inquiry System Jericho developed transformed how we manage inventory across multiple locations. The dealer pricing and SRP features have made our operations much more efficient.",
+    avatar: "👨‍💼"
+  },
+  {
+    name: "Evelyn Jumao-as",
+    role: "Importation Manager, Global AutoDistribution Inc.",
+    content: "Jericho's work on our inventory tracking systems has greatly improved our importation processes. His attention to detail and understanding of business requirements is outstanding.",
     avatar: "👩‍💼"
   },
   {
-    name: "Andres Bonifacio",
-    role: "IT Director, Techverse Solutions",
-    content: "Working with Jericho on our cloud infrastructure was a game-changer. His expertise in AWS and DevOps helped us achieve 99.9% uptime and significant cost savings.",
-    avatar: "👨‍💻"
+    name: "Jeany Ramirez",
+    role: "Retail Sales Manager, Global AutoDistribution Inc.",
+    content: "The Retail Sales & Inventory Tracking System Jericho built has been a game-changer for our sales operations. The dashboard analytics and Excel export features save us countless hours every week.",
+    avatar: "👩‍💼"
+  },
+  {
+    name: "Melvin Mata",
+    role: "Parts Supervisor, Global AutoDistribution Inc.",
+    content: "Jericho's dealer portal solutions have significantly improved our parts inventory management. His technical skills and problem-solving abilities are impressive.",
+    avatar: "👨‍💼"
+  },
+  {
+    name: "JMC Dealers & Sales Department",
+    role: "Global AutoDistribution Inc.",
+    content: "The systems Jericho has developed for our dealer network have greatly improved communication and inventory visibility. His solutions are user-friendly and exactly what our dealers need.",
+    avatar: "🏢"
   }
 ];
 
