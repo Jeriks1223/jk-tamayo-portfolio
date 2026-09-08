@@ -23,6 +23,7 @@ export const TECH_STACK = [
   "NetSuite", "SuiteScript", "Next.js", "TypeScript", "C#",
   "ASP.NET", "PostgreSQL", "AWS", "SharePoint", "Power Apps",
   "Docker", "Linux", "Flutter", "Laravel", "React Native",
+  "Railway", "Neon", "FastAPI", "Python",
 ];
 
 export const SKILLS = [
@@ -49,7 +50,8 @@ export const SKILLS = [
     items: [
       "Next.js", "React", "ASP.NET MVC", ".NET Framework", "C#",
       "JavaScript", "TypeScript", "Node.js", "Laravel", "Laravel Sail",
-      "Laravel Sanctum", "PHP",
+      "Laravel Sanctum", "PHP", "Python", "FastAPI", "NextAuth",
+      "React Hook Form", "Zod", "Radix UI", "Java", "Swing",
     ],
   },
   {
@@ -73,7 +75,8 @@ export const SKILLS = [
     color: "rgba(52,211,153,0.15)",
     items: [
       "SQL Server", "MSSQL", "MySQL", "PostgreSQL", "SQLite",
-      "Microsoft Lists", "DBeaver", "Prisma ORM",
+      "Microsoft Lists", "DBeaver", "Prisma ORM", "Drift ORM",
+      "Supabase",
     ],
   },
   {
@@ -103,6 +106,7 @@ export const SKILLS = [
     items: [
       "AWS EC2", "Linux", "Docker", "Laravel Sail",
       "WSL", "Server Administration", "Azure", "Vercel",
+      "Railway", "Neon PostgreSQL",
     ],
   },
   {
@@ -199,6 +203,7 @@ export const PROJECTS = [
     tech: ["Next.js", "PostgreSQL", "NetSuite","Azure","RESTful API"],
     features: ["Sales Tracking", "Unit Monitoring", "Dashboard Analytics", "Excel Exports", "File Upload"],
     category: ["Web App"],
+    link: "https://sales.jmc.com.ph",
   },
   {
     title: "Cash Advance Management System",
@@ -431,6 +436,82 @@ features: ["DiceRoll", "RandomSongs", "YouTubePlayer", "RollHistory", "SongManag
   category: ["Desktop Application"],
   link: "#"
 },
+  {
+  title: "P.A.T.R.O.L Cebu - Hazard-Aware Highway Safety",
+  description:
+    "Predictive Analytics & Temporal Risk Oversight Loop — A hazard-aware road safety decision-support application that analyzes historical accident data using spatial hotspot analysis (KDE) and Poisson-based risk modeling to support safer route selection for Cebu highways.",
+  icon: "🚦",
+  color: "rgba(239,68,68,0.15)",
+  tech: ["Flutter", "FastAPI", "PostgreSQL", "Neon", "SQLite", "Railway", "scipy", "statsmodels", "Riverpod"],
+  features: [
+    "Spatial Hotspot Analysis (KDE)",
+    "Poisson Risk Modeling",
+    "Hazard-Aware Routing",
+    "Offline-First Mobile App",
+    "Real-time Accident Data Sync",
+    "Risk Visualization Maps",
+    "Route Scoring & Recommendations"
+  ],
+  category: ["Mobile App", "Web App", "Research"],
+},
+  {
+  title: "TindaPOS - Sari-sari Store POS System",
+  description:
+    "Point of sale system for sari-sari stores with offline SQLite database, cloud sync via Supabase, barcode scanning, inventory tracking, and sales reporting. Built with Flutter and Riverpod for state management.",
+  icon: "🏪",
+  color: "rgba(251,191,36,0.15)",
+  tech: ["Flutter", "SQLite", "Supabase", "Riverpod", "Drift ORM", "mobile_scanner", "fl_chart"],
+  features: [
+    "POS/Checkout System",
+    "Barcode/QR Scanning",
+    "Product Management",
+    "Inventory Tracking",
+    "Sales Reports & Charts",
+    "Offline Mode (SQLite)",
+    "Cloud Sync (Supabase)",
+    "Authentication"
+  ],
+  category: ["Mobile App"],
+},
+  {
+  title: "PDF Encryptor - Desktop Security Tool",
+  description:
+    "Cross-platform desktop application for PDF security management. Features include encrypting PDFs with view-only restrictions, decrypting locked PDFs with known passwords, and password recovery using wordlist attacks. Built with Java Swing and Apache PDFBox.",
+  icon: "🔐",
+  color: "rgba(139,92,246,0.15)",
+  tech: ["Java", "Swing", "Apache PDFBox", "AWT"],
+  features: [
+    "PDF Encryption (View-Only)",
+    "PDF Decryption",
+    "Password Recovery (Wordlist)",
+    "Cross-Platform (Windows/Mac/Linux)",
+    "128-bit Encryption",
+    "User/Owner Password Support",
+    "GUI with Tabbed Interface"
+  ],
+  category: ["Desktop Application"],
+},
+  {
+  title: "Office Supplies Requisition System",
+  description:
+    "Enterprise requisition, inventory, and purchasing system with comprehensive RBAC, authentication, and administration modules. Built with Next.js 16, PostgreSQL, Prisma ORM, and NextAuth for secure internal operations management.",
+  icon: "📋",
+  color: "rgba(34,211,238,0.15)",
+  tech: ["Next.js", "TypeScript", "PostgreSQL", "Prisma ORM", "NextAuth", "Radix UI", "React Hook Form", "Zod"],
+  features: [
+    "Role-Based Access Control (RBAC)",
+    "Authentication & Sessions",
+    "User Management",
+    "Role & Permission Management",
+    "Department Management",
+    "Item Categories & Units",
+    "Stock Locations",
+    "Admin Dashboard",
+    "Audit Logging",
+    "Server Actions"
+  ],
+  category: ["Web App"],
+},
 ];
 
 export const EDUCATION = [
@@ -459,4 +540,25 @@ export const INTERESTS = [
   { emoji: "📈", label: "Business Automation" },
 ];
 
-export const PROJECT_CATEGORIES = ["All", "ERP", "Web App", "Power Platform", "Desktop App", "Website", "Mobile App"];
+export const TESTIMONIALS = [
+  {
+    name: "Jose Rizal",
+    role: "CEO, Philippine Innovation Hub",
+    content: "Jericho's work on our NetSuite customization transformed our entire ERP workflow. His attention to detail and technical expertise in SuiteScript development is exceptional.",
+    avatar: "👨‍💼"
+  },
+  {
+    name: "Maria Clara",
+    role: "Operations Manager, Global AutoDistribution",
+    content: "The Dealer Parts Inquiry System Jericho built significantly improved our inventory visibility across multiple locations. His ability to understand business needs and translate them into technical solutions is remarkable.",
+    avatar: "👩‍💼"
+  },
+  {
+    name: "Andres Bonifacio",
+    role: "IT Director, Techverse Solutions",
+    content: "Working with Jericho on our cloud infrastructure was a game-changer. His expertise in AWS and DevOps helped us achieve 99.9% uptime and significant cost savings.",
+    avatar: "👨‍💻"
+  }
+];
+
+export const PROJECT_CATEGORIES = ["All", "ERP", "Web App", "Power Platform", "Desktop App", "Website", "Mobile App", "Research"];

@@ -198,6 +198,88 @@ export const SanctumIcon = ({ size = 24 }: P) => (
   </svg>
 );
 
+export const RailwayIcon = ({ size = 24 }: P) => (
+  <svg width={size} height={size} viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="40" height="40" rx="8" fill="#0B0F19"/>
+    <path d="M12 20L20 10L28 20" stroke="#A855F7" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+    <path d="M12 28L20 18L28 28" stroke="#A855F7" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+    <circle cx="20" cy="24" r="3" fill="#A855F7"/>
+  </svg>
+);
+
+export const NeonIcon = ({ size = 24 }: P) => (
+  <svg width={size} height={size} viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="40" height="40" rx="8" fill="#0B0F19"/>
+    <ellipse cx="20" cy="20" rx="12" ry="5" stroke="#4ADE80" strokeWidth="2" fill="none"/>
+    <ellipse cx="20" cy="20" rx="12" ry="5" stroke="#22D3EE" strokeWidth="2" fill="none" transform="rotate(60 20 20)"/>
+    <ellipse cx="20" cy="20" rx="12" ry="5" stroke="#A855F7" strokeWidth="2" fill="none" transform="rotate(-60 20 20)"/>
+    <circle cx="20" cy="20" r="3" fill="#4ADE80"/>
+  </svg>
+);
+
+export const NextAuthIcon = ({ size = 24 }: P) => (
+  <svg width={size} height={size} viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="40" height="40" rx="8" fill="#000000"/>
+    <text x="20" y="28" textAnchor="middle" fontSize="16" fontWeight="bold" fill="white" fontFamily="Arial">Auth</text>
+  </svg>
+);
+
+export const ReactHookFormIcon = ({ size = 24 }: P) => (
+  <svg width={size} height={size} viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="40" height="40" rx="8" fill="#EC5990"/>
+    <path d="M20 8L32 20L20 32L8 20Z" fill="white" opacity="0.9"/>
+    <text x="20" y="24" textAnchor="middle" fontSize="8" fontWeight="bold" fill="#EC5990" fontFamily="Arial">RHF</text>
+  </svg>
+);
+
+export const ZodIcon = ({ size = 24 }: P) => (
+  <svg width={size} height={size} viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="40" height="40" rx="8" fill="#3E82F7"/>
+    <text x="20" y="28" textAnchor="middle" fontSize="14" fontWeight="900" fill="white" fontFamily="Arial">Z</text>
+  </svg>
+);
+
+export const RadixUIIcon = ({ size = 24 }: P) => (
+  <svg width={size} height={size} viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="40" height="40" rx="8" fill="#000000"/>
+    <circle cx="20" cy="20" r="12" stroke="white" strokeWidth="2" fill="none"/>
+    <circle cx="20" cy="20" r="6" fill="white"/>
+  </svg>
+);
+
+export const JavaIcon = ({ size = 24 }: P) => (
+  <svg width={size} height={size} viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="40" height="40" rx="8" fill="#007396"/>
+    <path d="M20 8C15 8 12 12 12 16C12 20 15 22 15 22C15 22 13 20 13 16C13 12 16 10 20 10C24 10 27 12 27 16C27 20 25 22 25 22C25 22 28 20 28 16C28 12 25 8 20 8Z" fill="white"/>
+    <path d="M12 26C12 26 14 30 20 30C26 30 28 26 28 26" stroke="white" strokeWidth="2" strokeLinecap="round"/>
+    <circle cx="20" cy="24" r="3" fill="white"/>
+  </svg>
+);
+
+export const SwingIcon = ({ size = 24 }: P) => (
+  <svg width={size} height={size} viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="40" height="40" rx="8" fill="#5382A1"/>
+    <path d="M20 8V32M12 20H28" stroke="white" strokeWidth="2" strokeLinecap="round"/>
+    <circle cx="20" cy="20" r="4" stroke="white" strokeWidth="2" fill="none"/>
+  </svg>
+);
+
+export const DriftIcon = ({ size = 24 }: P) => (
+  <svg width={size} height={size} viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="40" height="40" rx="8" fill="#00A9E0"/>
+    <path d="M12 20C12 15 16 12 20 12C24 12 28 15 28 20C28 25 24 28 20 28C16 28 12 25 12 20Z" fill="white" opacity="0.3"/>
+    <path d="M12 20L20 8L28 20L20 32Z" fill="white"/>
+  </svg>
+);
+
+export const SupabaseIcon = ({ size = 24 }: P) => (
+  <svg width={size} height={size} viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="40" height="40" rx="8" fill="#3ECF8E"/>
+    <path d="M8 28C8 28 12 32 20 32C28 32 32 28 32 28C32 28 28 24 20 24C12 24 8 28 8 28Z" fill="white"/>
+    <path d="M8 12C8 12 12 8 20 8C28 8 32 12 32 12C32 12 28 16 20 16C12 16 8 12 8 12Z" fill="white" opacity="0.6"/>
+  </svg>
+);
+
 // Map: tech label → component
 export const CUSTOM_ICONS: Record<string, (p: P) => ReactElement> = {
   "NetSuite":       NetSuiteIcon,
@@ -225,6 +307,17 @@ export const CUSTOM_ICONS: Record<string, (p: P) => ReactElement> = {
   "Laravel Sail":   LaravelSailIcon,
   "Sanctum":        SanctumIcon,
   "NetSuite API":   NetSuiteIcon,
+  "Railway":        RailwayIcon,
+  "Neon":           NeonIcon,
+  "Neon PostgreSQL": NeonIcon,
+  "NextAuth":       NextAuthIcon,
+  "React Hook Form": ReactHookFormIcon,
+  "Zod":            ZodIcon,
+  "Radix UI":       RadixUIIcon,
+  "Java":           JavaIcon,
+  "Swing":          SwingIcon,
+  "Drift ORM":      DriftIcon,
+  "Supabase":       SupabaseIcon,
 };
 
 export function hasCustomIcon(label: string): boolean {
