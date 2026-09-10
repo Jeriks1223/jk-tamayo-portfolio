@@ -551,7 +551,7 @@ export const TESTIMONIALS = [
     name: "FE Sotomayor",
     role: "IT Manager, Global AutoDistribution Inc.",
     content: "Jericho's technical expertise in NetSuite SuiteScript and his ability to integrate our systems with modern web technologies has been exceptional. He's a valuable asset to our IT team.",
-    avatar: "👨‍�"
+    avatar: "👨‍💻"
   },
   {
     name: "Ralph Dihayco",
@@ -582,6 +582,12 @@ export const TESTIMONIALS = [
     role: "Global AutoDistribution Inc.",
     content: "The systems Jericho has developed for our dealer network have greatly improved communication and inventory visibility. His solutions are user-friendly and exactly what our dealers need.",
     avatar: "🏢"
+  },
+  {
+    name: "Dywne Ouano & Atrio Badayos",
+    role: "Researchers, P.A.T.R.O.L Cebu",
+    content: "We're very satisfied with your service, sir. You were able to meet all the requirements and requests we needed for our app and whenever we requested changes or adjustments, you responded quickly and made sure they were implemented correctly. Overall the development process went smoothly, and we are really happy with the final result. Thank you so much for your service and support, sir Jericho.",
+    avatar: "🔬"
   }
 ];
 
