@@ -76,6 +76,21 @@ export default function Projects() {
                   if (project.link) window.open(project.link, "_blank", "noopener,noreferrer");
                 }}
               >
+                {project.image && (
+                  <div
+                    className="w-full h-40 rounded-xl mb-4 overflow-hidden"
+                    style={{ border: "1px solid var(--border)" }}
+                  >
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={project.image}
+                      alt={`${project.title} screenshot`}
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                    />
+                  </div>
+                )}
+
                 <div className="flex justify-between items-start mb-4">
                   <div
                     className="w-11 h-11 rounded-xl flex items-center justify-center text-xl"
@@ -115,7 +130,7 @@ export default function Projects() {
                   {project.description}
                 </p>
 
-                <div className="flex flex-wrap gap-1.5">
+                <div className="flex flex-wrap gap-1.5 mb-4">
                   {project.tech.map((t) => (
                     <span
                       key={t}
@@ -130,6 +145,19 @@ export default function Projects() {
                     </span>
                   ))}
                 </div>
+
+                {project.link && project.link !== "#" && (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={(e) => e.stopPropagation()}
+                    className="inline-flex items-center gap-1.5 text-sm font-medium self-start"
+                    style={{ color: "var(--accent)" }}
+                  >
+                    View Live ↗
+                  </a>
+                )}
               </motion.div>
             ))}
           </AnimatePresence>
