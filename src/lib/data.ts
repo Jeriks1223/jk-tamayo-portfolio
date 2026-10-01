@@ -657,6 +657,7 @@ features: ["DiceRoll", "RandomSongs", "YouTubePlayer", "RollHistory", "SongManag
     ],
     category: ["Web App"],
     image: "/projects/grade-portal.png",
+    link: "https://grade-portal-v1.vercel.app/",
   },
   {
     title: "Lunas — Mental Health Support Platform",
