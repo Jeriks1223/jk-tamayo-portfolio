@@ -2,7 +2,7 @@ export const PERSONAL = {
   name: "Jericho Kyle M. Tamayo",
   shortName: "Jericho",
   headline: "Building Enterprise Systems, Automations, and Scalable Business Solutions",
-  roles: ["NetSuite Developer", "Full Stack Developer", "AI Ready"],
+  roles: ["NetSuite Developer", "Full Stack Developer", "Mobile Developer (Flutter)", "AI Ready"],
   description:
     "Passionate software engineer specializing in ERP customization, workflow automation, cloud infrastructure, enterprise application development, and business process optimization. Experienced in building solutions across NetSuite, Microsoft Power Platform, AZURE, AWS, .NET,Next.js, PostgreSQL, Flutter,  SQLite, MySQL, SQL Server, and modern web technologies.",
   email: "jerectamz@gmail.com",
@@ -58,7 +58,12 @@ export const SKILLS = [
     category: "Mobile Development",
     icon: "📱",
     color: "rgba(244,114,182,0.15)",
-    items: ["Flutter", "React Native", "SQLite", "Dart"],
+    items: [
+      "Flutter", "Dart", "React Native", "Riverpod", "go_router",
+      "SQLite / sqflite", "Drift ORM", "Offline-First Sync", "Supabase",
+      "Firebase Cloud Messaging", "Local Notifications",
+      "Barcode & QR Scanning (mobile_scanner)", "Flutter Web",
+    ],
   },
   {
     category: "UI & Design Systems",
@@ -133,13 +138,22 @@ export const SKILLS = [
 export const EXPERIENCE = [
   {
     company: "Global AutoDistribution Inc.",
-    role: "NetSuite Developer · SharePoint Developer · Full Stack Developer · Business Systems Analyst",
+    role: "NetSuite Developer · Full Stack Developer · Mobile Developer · SharePoint Developer · Business Systems Analyst",
     period: "February 2025 – Present",
     location: "Cebu, PH",
     current: true,
     description:
-      "Develops and maintains custom NetSuite solutions including SuiteScripts, SuiteFlow workflows, custom forms, and advanced reporting. Handles Power Platform and SharePoint development while also architecting full-stack web applications deployed to AWS. Serves as Business Systems Analyst bridging stakeholder requirements to technical solutions.",
-    tags: ["NetSuite", "SuiteScript", "SuiteFlow", "SharePoint", "Power Apps", "Power Automate", "Next.js", "AWS"],
+      "Develops and maintains custom NetSuite solutions including SuiteScripts, SuiteFlow workflows, custom forms, and advanced reporting. Builds full-stack web applications integrated with NetSuite and deployed to Azure and AWS, and develops Flutter mobile apps for warehouse operations such as barcode/QR-based parts receiving. Handles Power Platform and SharePoint development, and serves as Business Systems Analyst bridging stakeholder requirements to technical solutions.",
+    tags: ["NetSuite", "SuiteScript", "SuiteFlow", "Next.js", "PostgreSQL", "Flutter", "Dart", "Azure", "AWS", "SharePoint", "Power Apps", "Power Automate"],
+    projects: [
+      "NetSuite Development & Automation Platform — SuiteScripts, Suitelets, workflows, saved searches, and PDF templates",
+      "Dealer Parts Inquiry System — role-based parts availability and dealer/SRP pricing portal (Next.js, PostgreSQL, Azure)",
+      "Retail Sales & Inventory Tracking System — NetSuite-integrated sales and unit monitoring dashboard (sales.jmc.com.ph)",
+      "Parts Receiving System — Flutter mobile app with barcode/QR scanning for PO receiving, plus a Next.js dashboard synced with NetSuite",
+      "Office Supplies Requisition System — requisition, inventory, and purchasing platform with RBAC and audit logging (Next.js, PostgreSQL, Prisma, NextAuth)",
+      "Cash Advance Management System — Power Apps + Power Automate approval workflow",
+      "Fuel Request & Approval System — mobile-friendly Power Platform request routing",
+    ],
   },
   {
     company: "Symon Systems and Allied Services",
@@ -245,6 +259,7 @@ export const PROJECTS = [
     features: ["Kanban Board", "AI Sub-task Generation", "Project Management"],
     category: ["Web App"],
     link: "https://magic-task-mind.lovable.app",
+    image: "/projects/task-orchestrator.png",
   },
   {
     title: "JKCM — Jesus' Kingdom Culture Ministries",
@@ -256,17 +271,19 @@ export const PROJECTS = [
     features: ["Sermons Page", "Events Listing", "Ministry Pages", "Prayer Requests"],
     category: ["Website"],
     link: "https://jkcm.vercel.app/",
+    image: "/projects/jkcm.png",
   },
   {
     title: "FatherHood Philippines Inc.",
     description:
-      "Organization website for FatherHood Philippines Inc., supporting membership applications, event listings, and a member login portal for a fathers' fellowship network.",
+      "Organization website for FatherHood Philippines Inc. with membership applications, event listings, and a member login portal, plus a companion Flutter mobile app for members and officers with offline support and push notifications.",
     icon: "👨‍👧‍👦",
     color: "rgba(52,211,153,0.15)",
-    tech: ["Next.js", "PostgreSQL","Vercel"],
-    features: ["Membership Application", "Member Login", "Events Page"],
-    category: ["Website"],
+    tech: ["Next.js", "PostgreSQL", "Vercel", "Flutter", "Riverpod", "SQLite", "Firebase Messaging"],
+    features: ["Membership Application", "Member Login", "Events Page", "Member & Officer Mobile App", "Offline Support", "Push Notifications"],
+    category: ["Website", "Mobile App"],
     link: "https://fatherhood-philippines-inc.vercel.app/",
+    image: "/projects/fatherhood.png",
   },
   {
     title: "iTeacherPH — School Management System",
@@ -278,6 +295,7 @@ export const PROJECTS = [
     features: ["School Management", "Teacher Tools", "Secure Login"],
     category: ["Web App"],
     link: "https://i-teacher-ph.vercel.app/",
+    image: "/projects/iteacherph.png",
   },
   {
     title: "Teacher Scheduler",
@@ -289,17 +307,19 @@ export const PROJECTS = [
     features: ["Schedule Builder", "Bulk Print", "Upload/Export"],
     category: ["Web App"],
     link: "https://teacher-scheduler-cyan.vercel.app/scheduler",
+    image: "/projects/teacher-scheduler.png",
   },
   {
     title: "JKT Expense Tracker",
     description:
-      "Personal finance web app for tracking expenses with a secure login and dashboard, helping users monitor spending and stay on top of their budget.",
+      "Personal finance tracker with an offline-first Flutter mobile app and a Next.js web dashboard, helping users log expenses, view spending charts, and optionally sync to the cloud.",
     icon: "💰",
     color: "rgba(167,139,250,0.15)",
-    tech: ["Next.js", "Authentication", "Dashboard"],
+    tech: ["Flutter", "Riverpod", "Drift ORM", "SQLite", "fl_chart", "Next.js", "Neon PostgreSQL"],
     features: ["Expense Tracking", "Dashboard", "Secure Login"],
     category: ["Web App", "Mobile App"],
     link: "https://jkt-expense-tracker.vercel.app/",
+    image: "/projects/expense-tracker.png",
   },
   {
     title: "HOA Management System",
