@@ -147,9 +147,9 @@ export const EXPERIENCE = [
     tags: ["NetSuite", "SuiteScript", "SuiteFlow", "Next.js", "PostgreSQL", "Flutter", "Dart", "Azure", "AWS", "SharePoint", "Power Apps", "Power Automate"],
     projects: [
       "NetSuite Development & Automation Platform — SuiteScripts, Suitelets, workflows, saved searches, and PDF templates",
-      "Dealer Parts Inquiry System — role-based parts availability and dealer/SRP pricing portal (Next.js, PostgreSQL, Azure)",
+      "Dealer Parts Inquiry System — role-based parts availability and dealer/SRP pricing portal at parts.jmc.com.ph (Next.js, PostgreSQL, Azure)",
       "Retail Sales & Inventory Tracking System — NetSuite-integrated sales and unit monitoring dashboard (sales.jmc.com.ph)",
-      "Parts Receiving System — Flutter mobile app with barcode/QR scanning for PO receiving, plus a Next.js dashboard synced with NetSuite",
+      "Parts Receiving System — Flutter mobile app with barcode/QR scanning for PO receiving, plus a Next.js dashboard synced with NetSuite (parts-receiving.jmc.com.ph)",
       "Office Supplies Requisition System — requisition, inventory, and purchasing platform with RBAC and audit logging (Next.js, PostgreSQL, Prisma, NextAuth)",
       "Cash Advance Management System — Power Apps + Power Automate approval workflow",
       "Fuel Request & Approval System — mobile-friendly Power Platform request routing",
@@ -207,6 +207,7 @@ export const PROJECTS = [
     tech: ["Next.js", "PostgreSQL", "Azure"],
     features: ["Dealer Pricing", "SRP Pricing", "Inventory Visibility", "Reporting", "Activity Tracking"],
     category: ["Web App"],
+    link: "https://parts.jmc.com.ph",
   },
   {
     title: "Retail Sales & Inventory Tracking System",
@@ -763,6 +764,7 @@ features: ["DiceRoll", "RandomSongs", "YouTubePlayer", "RollHistory", "SongManag
     ],
     category: ["Web App", "Mobile App"],
     image: "/projects/parts-receiving.png",
+    link: "https://parts-receiving.jmc.com.ph",
   },
   {
     title: "Campaign Catalyst — Promotional Campaign Management System",
