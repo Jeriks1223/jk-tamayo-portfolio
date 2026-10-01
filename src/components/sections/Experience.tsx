@@ -83,6 +83,28 @@ export default function Experience() {
               <p className="text-sm leading-relaxed mb-3" style={{ color: "var(--muted)" }}>
                 {exp.description}
               </p>
+              {"projects" in exp && exp.projects && (
+                <div className="mb-4">
+                  <div
+                    className="font-mono text-xs uppercase tracking-widest mb-2"
+                    style={{ color: "var(--accent)", letterSpacing: "0.12em" }}
+                  >
+                    Key Projects
+                  </div>
+                  <ul className="flex flex-col gap-1.5">
+                    {exp.projects.map((project) => (
+                      <li
+                        key={project}
+                        className="text-sm leading-relaxed flex gap-2"
+                        style={{ color: "var(--muted)" }}
+                      >
+                        <span style={{ color: "var(--accent2)" }}>▹</span>
+                        <span>{project}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
               <div className="flex flex-wrap gap-2">
                 {exp.tags.map((tag) => (
                   <span
