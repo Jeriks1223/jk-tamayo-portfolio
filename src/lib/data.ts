@@ -411,6 +411,8 @@ features: ["OnlineBooking", "Locations", "Vehicles", "Services", "Bookings", "St
     tech: ["Next.js", "PostgreSQL"],
 features: ["Authentication", "QRCodeGeneration", "QRCodeHistory", "UserDashboard", "URLManagement", "PrivateStorage"],
   category: ["Web App"],
+    image: "/projects/qr-generator.png",
+    link: "https://qr-barcode-gen.vercel.app/",
   },
          {
     title: "Roll & Sing",
@@ -421,6 +423,8 @@ features: ["Authentication", "QRCodeGeneration", "QRCodeHistory", "UserDashboard
     tech: ["Next.js", "PostgreSQL"],
 features: ["DiceRoll", "RandomSongs", "YouTubePlayer", "RollHistory", "SongManagement", "PlayerNames"],
   category: ["Web App"],
+    image: "/projects/roll-n-sing.png",
+    link: "https://roll-n-sing.vercel.app/",
   },
   {
   title: "SSH Connection Manager",
