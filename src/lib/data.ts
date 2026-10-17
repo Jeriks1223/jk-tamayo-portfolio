@@ -811,7 +811,7 @@ features: ["DiceRoll", "RandomSongs", "YouTubePlayer", "RollHistory", "SongManag
     image: "/projects/reminders.png",
   },
   {
-    title: "KaPresenter — Worship Presentation Software",
+    title: "CoPresenter — Worship Presentation Software",
     description:
       "Lightweight presentation software for churches on Windows: lyrics, Bible, media, music, stage display, and a built-in phone remote. Familiar to ProPresenter users yet gentle enough for older church computers, with crash-safe autosave and backups.",
     icon: "🎤",
@@ -828,12 +828,11 @@ features: ["DiceRoll", "RandomSongs", "YouTubePlayer", "RollHistory", "SongManag
       "Autosave, Backup & Recovery",
     ],
     category: ["Desktop App"],
-    image: "/projects/kapresenter.png",
   },
   {
-    title: "KaPresenter Website & License Server",
+    title: "CoPresenter Website & License Server",
     description:
-      "The release site for KaPresenter — landing page, pricing, and download — plus the license server the desktop app talks to, with per-PC activation protected by hashed hardware fingerprints and signed license keys.",
+      "The release site for CoPresenter — landing page, pricing, and download — plus the license server the desktop app talks to, with per-PC activation protected by hashed hardware fingerprints and signed license keys.",
     icon: "🔑",
     color: "rgba(167,139,250,0.15)",
     tech: ["Next.js 16", "TypeScript", "Tailwind CSS 4", "shadcn/ui", "PostgreSQL", "Prisma 7"],
