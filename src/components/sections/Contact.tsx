@@ -89,7 +89,7 @@ export default function Contact() {
             <div className="flex flex-wrap gap-3 mt-6">
               <a
                 href={PERSONAL.linkedin}
-                target="https://www.linkedin.com/in/jericho-kyle-tamayo-01621b179/"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="px-4 py-2 rounded-lg text-sm no-underline transition-all"
                 style={{
@@ -108,7 +108,7 @@ export default function Contact() {
               </a>
               <a
                 href={PERSONAL.github}
-                target="https://github.com/Jeriks1223"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="px-4 py-2 rounded-lg text-sm no-underline transition-all"
                 style={{
