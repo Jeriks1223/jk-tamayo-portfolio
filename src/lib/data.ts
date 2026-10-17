@@ -147,7 +147,7 @@ export const EXPERIENCE = [
     tags: ["NetSuite", "SuiteScript", "SuiteFlow", "Next.js", "PostgreSQL", "Flutter", "Dart", "Azure", "AWS", "SharePoint", "Power Apps", "Power Automate", "Claude API"],
     projects: [
       "NetSuite Development & Automation Platform — SuiteScripts, Suitelets, workflows, saved searches, and PDF templates",
-      "Dealer Parts Inquiry System — role-based parts availability and dealer/SRP pricing portal at parts.jmc.com.ph (Next.js, PostgreSQL, Azure)",
+      "Dealer Parts Inquiry System (GAI Dealer Portal) — role-based parts availability, dealer/SRP pricing, parts and vehicle ordering, and branch reorder points at parts.jmc.com.ph (Next.js, PostgreSQL, Azure)",
       "Retail Sales & Inventory Tracking System — NetSuite-integrated sales and unit monitoring dashboard (sales.jmc.com.ph)",
       "Parts Receiving System — Flutter mobile app with barcode/QR scanning for PO receiving, plus a Next.js dashboard synced with NetSuite (parts-receiving.jmc.com.ph)",
       "Office Supplies Requisition System — requisition, inventory, and purchasing platform with RBAC and audit logging (Next.js, PostgreSQL, Prisma, NextAuth)",
@@ -204,11 +204,11 @@ export const PROJECTS = [
   {
     title: "Dealer Parts Inquiry System",
     description:
-      "Role-based inventory inquiry platform allowing dealers and managers to monitor parts availability across multiple locations with dealer/SRP pricing, activity tracking, and dynamic reporting.",
+      "Rebuilt from a Google Apps Script tool into the GAI Dealer Portal: a role-based parts inquiry platform where dealers and head-office staff check availability across branches with dealer/SRP pricing, then place parts and vehicle orders, track branch reorder points, and review activity reports.",
     icon: "📦",
     color: "rgba(34,211,238,0.15)",
-    tech: ["Next.js", "PostgreSQL", "Azure"],
-    features: ["Dealer Pricing", "SRP Pricing", "Inventory Visibility", "Reporting", "Activity Tracking"],
+    tech: ["Next.js 16", "TypeScript", "PostgreSQL", "Prisma", "NextAuth", "NetSuite RESTlet (OAuth 1.0a)", "Azure"],
+    features: ["Role-Based Pricing & Stock Masking (11 Roles)", "Dealer & SRP Pricing", "Multi-Branch Inventory Visibility", "Parts & Vehicle Ordering", "Branch Reorder Points", "Reports & Activity Tracking"],
     category: ["Web App"],
     link: "https://parts.jmc.com.ph",
   },
