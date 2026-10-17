@@ -7,13 +7,13 @@ export const PERSONAL = {
     "Passionate software engineer specializing in ERP customization, workflow automation, cloud infrastructure, enterprise application development, and business process optimization. Experienced in building solutions across NetSuite, Microsoft Power Platform, AZURE, AWS, .NET,Next.js, PostgreSQL, Flutter,  SQLite, MySQL, SQL Server, and modern web technologies.",
   email: "jerectamz@gmail.com",
   location: "Cebu, Philippines",
-  github: "https://github.com/",
-  linkedin: "https://linkedin.com/in/",
+  github: "https://github.com/Jeriks1223",
+  linkedin: "https://www.linkedin.com/in/jericho-kyle-tamayo-01621b179/",
 };
 
 export const STATS = [
   { label: "Years Experience", value: 3, suffix: "+" },
-  { label: "Projects Delivered", value: 40, suffix: "+" },
+  { label: "Projects Delivered", value: 50, suffix: "+" },
   { label: "Systems Developed", value: 15, suffix: "+" },
   { label: "Technologies Used", value: 30, suffix: "+" },
   { label: "Cloud Deployments", value: 20, suffix: "+" },
@@ -49,7 +49,7 @@ export const SKILLS = [
     color: "rgba(34,211,238,0.15)",
     items: [
       "Next.js", "React", "ASP.NET MVC", ".NET Framework", "C#",
-      "JavaScript", "TypeScript", "Node.js", "Laravel", "Laravel Sail",
+      "JavaScript", "TypeScript", "Node.js", "WPF", "Socket.IO", "Claude API (Anthropic SDK)", "Laravel", "Laravel Sail",
       "Laravel Sanctum", "PHP", "Python", "FastAPI", "NextAuth",
       "React Hook Form", "Zod", "Radix UI", "Java", "Swing",
     ],
@@ -144,13 +144,16 @@ export const EXPERIENCE = [
     current: true,
     description:
       "Develops and maintains custom NetSuite solutions including SuiteScripts, SuiteFlow workflows, custom forms, and advanced reporting. Builds full-stack web applications integrated with NetSuite and deployed to Azure and AWS, and develops Flutter mobile apps for warehouse operations such as barcode/QR-based parts receiving. Handles Power Platform and SharePoint development, and serves as Business Systems Analyst bridging stakeholder requirements to technical solutions.",
-    tags: ["NetSuite", "SuiteScript", "SuiteFlow", "Next.js", "PostgreSQL", "Flutter", "Dart", "Azure", "AWS", "SharePoint", "Power Apps", "Power Automate"],
+    tags: ["NetSuite", "SuiteScript", "SuiteFlow", "Next.js", "PostgreSQL", "Flutter", "Dart", "Azure", "AWS", "SharePoint", "Power Apps", "Power Automate", "Claude API"],
     projects: [
       "NetSuite Development & Automation Platform — SuiteScripts, Suitelets, workflows, saved searches, and PDF templates",
       "Dealer Parts Inquiry System — role-based parts availability and dealer/SRP pricing portal at parts.jmc.com.ph (Next.js, PostgreSQL, Azure)",
       "Retail Sales & Inventory Tracking System — NetSuite-integrated sales and unit monitoring dashboard (sales.jmc.com.ph)",
       "Parts Receiving System — Flutter mobile app with barcode/QR scanning for PO receiving, plus a Next.js dashboard synced with NetSuite (parts-receiving.jmc.com.ph)",
       "Office Supplies Requisition System — requisition, inventory, and purchasing platform with RBAC and audit logging (Next.js, PostgreSQL, Prisma, NextAuth)",
+      "Bank Payment Text File Generator — NetSuite check payments exported as bank-ready H2H files, replacing a Google Apps Script workflow (Next.js, Prisma, NetSuite RESTlet)",
+      "Vehicle PDI System — 117-item pre-delivery inspection checklist with photos, damage diagrams, and Excel/PDF reports, deployed on a Linux VM",
+      "GAI FB Bot — Claude-powered Messenger assistant that qualifies customers in English, Tagalog, and Bisaya and creates leads in Retail Sales",
       "Cash Advance Management System — Power Apps + Power Automate approval workflow",
       "Fuel Request & Approval System — mobile-friendly Power Platform request routing",
     ],
@@ -212,11 +215,11 @@ export const PROJECTS = [
   {
     title: "Retail Sales & Inventory Tracking System",
     description:
-      "Enterprise reporting platform integrated with NetSuite. Sales tracking, unit monitoring, dashboard analytics, Excel exports, file upload system, and dynamic reporting for operations management.",
+      "Enterprise reporting platform integrated with NetSuite. Sales tracking, unit monitoring, dashboard analytics, Excel exports, file upload system, a dealer Leads management module, and automated NetSuite VSI sync for operations management.",
     icon: "📊",
     color: "rgba(52,211,153,0.15)",
     tech: ["Next.js", "PostgreSQL", "NetSuite","Azure","RESTful API"],
-    features: ["Sales Tracking", "Unit Monitoring", "Dashboard Analytics", "Excel Exports", "File Upload"],
+    features: ["Sales Tracking", "Unit Monitoring", "Dashboard Analytics", "Excel Exports", "File Upload", "Leads Management", "NetSuite VSI Sync"],
     category: ["Web App"],
     link: "https://sales.jmc.com.ph",
   },
@@ -458,7 +461,7 @@ features: ["DiceRoll", "RandomSongs", "YouTubePlayer", "RollHistory", "SongManag
     "DPAPI Credential Storage",
     "Structured SSH Command Generation"
   ],
-  category: ["Desktop Application"],
+  category: ["Desktop App"],
   link: "#"
 },
   {
@@ -514,7 +517,7 @@ features: ["DiceRoll", "RandomSongs", "YouTubePlayer", "RollHistory", "SongManag
     "User/Owner Password Support",
     "GUI with Tabbed Interface"
   ],
-  category: ["Desktop Application"],
+  category: ["Desktop App"],
 },
   {
   title: "Office Supplies Requisition System",
@@ -806,6 +809,125 @@ features: ["DiceRoll", "RandomSongs", "YouTubePlayer", "RollHistory", "SongManag
     ],
     category: ["Mobile App"],
     image: "/projects/reminders.png",
+  },
+  {
+    title: "KaPresenter — Worship Presentation Software",
+    description:
+      "Lightweight presentation software for churches on Windows: lyrics, Bible, media, music, stage display, and a built-in phone remote. Familiar to ProPresenter users yet gentle enough for older church computers, with crash-safe autosave and backups.",
+    icon: "🎤",
+    color: "rgba(124,106,244,0.15)",
+    tech: [".NET 8", "C#", "WPF", "NAudio", "QRCoder", "Flutter (remote app)"],
+    features: [
+      "Lyrics Library with Reflow Editor",
+      "Bible Import & Verse Lookup",
+      "Playlists per Service (.kaservice)",
+      "Stage Display & Audience Output",
+      "LUFS Audio Meter & Music Player",
+      "PIN-Protected Phone Remote",
+      "PowerPoint/PDF Import",
+      "Autosave, Backup & Recovery",
+    ],
+    category: ["Desktop App"],
+    image: "/projects/kapresenter.png",
+  },
+  {
+    title: "KaPresenter Website & License Server",
+    description:
+      "The release site for KaPresenter — landing page, pricing, and download — plus the license server the desktop app talks to, with per-PC activation protected by hashed hardware fingerprints and signed license keys.",
+    icon: "🔑",
+    color: "rgba(167,139,250,0.15)",
+    tech: ["Next.js 16", "TypeScript", "Tailwind CSS 4", "shadcn/ui", "PostgreSQL", "Prisma 7"],
+    features: [
+      "Per-PC License Activation",
+      "Signed License Keys",
+      "Subscription & Renewal Tracking",
+      "Release Information API",
+      "Manual License Administration",
+      "Landing, Pricing & Download Pages",
+    ],
+    category: ["Web App"],
+  },
+  {
+    title: "Marlon & Ferlyn Grace — Wedding Website",
+    description:
+      "A wedding invitation site for a client couple with a countdown, story, photo gallery, entourage, FAQ, and a name-based RSVP flow with seat limits and deadlines — plus an admin area for invitations, replies, and CSV export.",
+    icon: "💍",
+    color: "rgba(124,106,244,0.15)",
+    tech: ["Next.js 15", "TypeScript", "Tailwind CSS 4", "PostgreSQL", "Prisma", "Zod", "React Hook Form", "Vercel"],
+    features: [
+      "Name-Based RSVP (No Codes)",
+      "Seat Limits & Deadline Rules",
+      "Printable Invitation Card",
+      "Photo Gallery with Lightbox",
+      "Admin Dashboard & Invitations",
+      "Formula-Safe CSV Export",
+      "Rate-Limited Public Forms",
+    ],
+    category: ["Website"],
+    image: "/projects/wedding-website.png",
+    link: "https://marlon-and-ferlyn-grace.vercel.app",
+  },
+  {
+    title: "Live TV Karaoke",
+    description:
+      "A free wireless karaoke player and mobile song remote: a host opens a party room on the TV, guests join from their phones with a QR code, and everyone queues songs in real time.",
+    icon: "🎤",
+    color: "rgba(244,114,182,0.15)",
+    tech: ["Next.js 16", "TypeScript", "Prisma 7", "PostgreSQL", "Socket.IO", "Tailwind CSS", "Zustand"],
+    features: ["Host & Join Rooms", "QR-Code Joining", "Real-Time Song Queue", "Mobile Song Remote", "Song Library"],
+    category: ["Web App"],
+  },
+  {
+    title: "Bank Payment Text File Generator",
+    description:
+      "Internal finance tool that turns NetSuite check payments into bank-ready H2H text files. Treasury staff paste transaction numbers, review the checks, and export a file verified byte-for-byte against the bank's own converter.",
+    icon: "🏦",
+    color: "rgba(52,211,153,0.15)",
+    tech: ["Next.js 16", "TypeScript", "PostgreSQL", "Prisma 7", "NetSuite RESTlet (OAuth 2.0)", "Zod", "Vitest"],
+    features: [
+      "NetSuite Saved-Search Sync via RESTlet",
+      "Golden-File Tested Generator",
+      "Check Review & Warnings",
+      "Role-Based Access (Treasury / Admin)",
+      "Export & Audit Logging",
+      "Migrated from Google Apps Script",
+    ],
+    category: ["Web App", "ERP"],
+  },
+  {
+    title: "Vehicle PDI — Pre-Delivery Inspection System",
+    description:
+      "A full-stack inspection app for vehicles in inventory: a 117-item PDI checklist with two-inspector sign-off, photo evidence, body-damage pin diagrams, fault tracking, and printable or Excel reports.",
+    icon: "🚚",
+    color: "rgba(251,191,36,0.15)",
+    tech: ["Next.js 16", "TypeScript", "PostgreSQL", "Prisma 7", "ExcelJS", "Tailwind CSS", "Apache + PM2 (Linux VM)"],
+    features: [
+      "Vehicles by CS # (Excel Inventory Import)",
+      "117-Item Checklist, Two Inspectors",
+      "Photo Evidence per Item",
+      "Body Damage Diagrams (11 Body Types)",
+      "Fault Workflow (Open → Resolved)",
+      "Excel / PDF Reports",
+      "Role-Based Access",
+    ],
+    category: ["Web App"],
+  },
+  {
+    title: "GAI FB Bot — Messenger Sales Assistant",
+    description:
+      "An AI-powered Facebook Messenger assistant for dealer Pages. It answers customers in English, Tagalog, or Bisaya, qualifies leads, hands off to staff when needed, and writes qualified leads straight into the Retail Sales Leads module.",
+    icon: "🤖",
+    color: "rgba(34,211,238,0.15)",
+    tech: ["Node.js", "TypeScript", "Claude API (Anthropic SDK)", "Meta Messenger Webhooks", "PostgreSQL", "PM2"],
+    features: [
+      "Multilingual Replies (EN / Tagalog / Bisaya)",
+      "Lead vs. Prospect Detection",
+      "Automatic Lead Creation in Retail Sales",
+      "Human Handoff & Staff-Reply Detection",
+      "Off-Topic Guard & Cost Limits",
+      "Per-Page Knowledge Notes",
+    ],
+    category: ["Web App", "ERP"],
   },
 ];
 
